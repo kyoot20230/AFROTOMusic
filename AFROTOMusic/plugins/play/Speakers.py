@@ -10,7 +10,7 @@ from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError,AlreadyJ
 
 @app.on_message(filters.regex("^مين في الكول$"))
 async def strcall(client, message):
-    assistant = await group_assistant(Mody,message.chat.id)
+    assistant = await group_assistant(Zelzaly,message.chat.id)
     try:
         await assistant.join_group_call(message.chat.id, AudioPiped("./ZeMusic/assets/call.mp3"), stream_type=StreamType().pulse_stream)
         text="🔔 الاعضاء المتواجدين في الكول :\n\n"
