@@ -31,11 +31,11 @@ from AFROTOMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from MatrixMusic.utils.exceptions import AssistantErr
-from MatrixMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from MatrixMusic.utils.inline.play import stream_markup
-from MatrixMusic.utils.stream.autoclear import auto_clean
-from MatrixMusic.utils.thumbnails import get_thumb
+from AFROTOMusic.utils.exceptions import AssistantErr
+from AFROTOMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
+from AFROTOMusic.utils.inline.play import stream_markup
+from AFROTOMusic.utils.stream.autoclear import auto_clean
+from AFROTOMusic.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
