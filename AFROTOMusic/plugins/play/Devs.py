@@ -17,7 +17,7 @@ from random import  choice, randint
                 
 @app.on_message(filters.command(["عفرتو","مطور السورس","مبرمج السورس","المطور"],"")
 )
-async def huhh(client: Client, message: Message):
+async def yas(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/96857cb597b588139fdd5.jpg",
         caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪](https://t.me/IIUll_l)❫
