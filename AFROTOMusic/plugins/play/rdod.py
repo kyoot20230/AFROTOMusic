@@ -18,8 +18,8 @@ def get_rd(text, id):
     return False
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 def add_rd(text, id, rd) -> bool:
     chat_id = str(id)
@@ -32,8 +32,8 @@ def add_rd(text, id, rd) -> bool:
     return True
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 def del_rd(x):
    word = str(x).replace("\n","")
@@ -48,8 +48,8 @@ def del_rd(x):
 
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 def del_rdod(id) -> bool:
     chat_id = str(id)
@@ -66,8 +66,8 @@ def del_rdod(id) -> bool:
           return
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 @app.on_message(filters.regex("^المشرفين$"))
 async def adlist(_, message):
@@ -85,8 +85,8 @@ async def botslist(_, message):
            rnryr+=f"› {'@'+b.user.username if b.user.username else b.user.mention} - `{b.user.id}` .\n"
     await message.reply(text=(ahmed))
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 @app.on_message(filters.regex("^اضف رد$") & filters.group)
 async def adf_rd(client, message):
@@ -104,8 +104,8 @@ async def adf_rd(client, message):
     else: return await MATRIXAR2.reply("حدث خطأ")
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 @app.on_message(filters.regex("^مسح رد$") & filters.group)
 async def delete_rd(client, message):
@@ -122,8 +122,8 @@ async def delete_rd(client, message):
    
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 @app.on_message(filters.regex("^مسح الردود$") & filters.group)
 async def delrdood(client, message):
@@ -136,8 +136,8 @@ async def delrdood(client, message):
 
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
 @app.on_message(filters.regex("افتاره"))
 async def her(_, message):
@@ -183,6 +183,6 @@ async def echo(_, msg):
  await msg.reply(text)
 
 '''
-Programmed by : 🎖️ @RNRYR
-   Channel -› • @Matrixthon
+Programmed by :  @UI_VM
+   Channel -› • @T_Y_E_X
 '''
