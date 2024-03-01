@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from MatrixMusic import LOGGER, YouTube, app
-from MatrixMusic.misc import db
-from MatrixMusic.utils.database import (
+from AFROTOMusic import LOGGER, YouTube, app
+from AFROTOMusic.misc import db
+from AFROTOMusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
