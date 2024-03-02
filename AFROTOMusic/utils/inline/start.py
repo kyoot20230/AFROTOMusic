@@ -6,16 +6,10 @@ from AFROTOMusic import app
 
 def start_panel(_):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text="ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
-        ],
         [InlineKeyboardButton(text="父 الأوامر 父", callback_data="zzzback")],
         [
-            InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
-            InlineKeyboardButton(text="ᑕᕼᗩᑎᑎEᒪ", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX),
+            InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
         ],
         [
          
