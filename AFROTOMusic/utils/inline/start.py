@@ -13,8 +13,9 @@ def start_panel(_):
             InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
             InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
         ],
-        [
-            InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
+        [  
+           InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
+        ],
         [
             InlineKeyboardButton(
                 text="⭓ADD✘ME",
@@ -36,6 +37,7 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
+        ],
         [
             InlineKeyboardButton(
                 text="⭓ADD✘ME",
