@@ -7,7 +7,7 @@ from AFROTOMusic import app
 def start_panel(_):
     buttons = [
         [
-          InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback"),
+          [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         ],
         [
             InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
@@ -29,7 +29,7 @@ def start_panel(_):
 def private_panel(_):
     buttons = [
         [
-          InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback"),
+          [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         ],
         [
             InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
