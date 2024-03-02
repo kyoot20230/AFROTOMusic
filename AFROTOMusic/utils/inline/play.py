@@ -9,7 +9,6 @@ from AFROTOMusic.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
-    usr = get_users(OWNER_ID)
     name = usr.first_name
     usrnam = usr.username
     buttons = [
