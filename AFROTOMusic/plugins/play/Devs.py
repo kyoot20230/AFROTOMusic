@@ -39,32 +39,25 @@ async def yas(client: Client, message: Message):
         ),
 
     )
-@app.on_message(
-    command(["مطور", "المطور"])
-    & filters.group
+@app.on_message(command(["تخ"]) & filters.group)
+async def huhh(client, message):
+    to_id = int(ahmed.split("to")[-1].split("in")[0])
+    from_id = int(ahmed.split("ahmed")[-1].split("to")[0])
+    in_id = int(caption.split("in")[-1])
+    to_url = f"tg://openmessage?user_id={to_id}"
+    from_url = f"tg://openmessage?user_id={from_id}"
+    ahmed = message.text
+    await message.reply_animation(
+        animation=f"https://telegra.ph/file/5a18fe591860a8a98f39f.mp4",
+        caption=f"""↯︙قتل ↫ ⦗ {app.get_chat(to_id).first_name}]({to_url}) ⦘\nالضحيه دا 😢 ↫ ⦗ [{app.get_chat(from_id).first_name}]({from_url}) ⦘\nانا لله وانـا اليـه راجعـون 😢😢""",
+    )
+    reply_markup=InlineKeyboardMarkup(
+
+       [
+           [
+               InlineKeyboardButton(
+                   "‹ : 𝖬𝖺𝖳𝗋𝗂x 𝖳𝖾𝖠𝗆 : ›", url=f"https://t.me/XMATTMX"),
+           ],
+       ]
+    ),
   
-)
-async def kimmyy(client: Client, message: Message):
-    usr = await client.get_users(OWNER)
-    name = usr.first_name
-    async for photo in client.iter_profile_photos(OWNER, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""**⩹━★⊷⌯𝐒𝐎𝐔𝐑𝐂𝐄 𝐕𝐄𝐆𝐀⌯⊶★━⩺**
-                    
-🔥 ¦𝚆𝙾𝙽𝙴𝚁 :[{usr.first_name}](https://t.me/{OWNER})
-📀 ¦𝚄𝚂𝙴𝚁 :@{OWNER} 
-🆔 ¦𝙸𝙳 :`{usr.id}`
- 
-**⩹━★⊷⌯𝐒𝐎𝐔𝐑𝐂𝐄 𝐕𝐄𝐆𝐀⌯⊶★━⩺** """, 
-reply_markup=InlineKeyboardMarkup(
-          [               
-            [            
-              InlineKeyboardButton (name, url=f"https://t.me/{OWNER}")
-            ],                   
-          ]              
-       )                 
-    )                    
-                    sender_id = message.from_user.id
-                    sender_name = message.from_user.first_name
-                    await app.send_message(OWNER, f"الواد {message.from_user.mention} دا بينادي عليك \n\n الايدي بتاعه : {sender_id} \n\n اسمه : {sender_name}")
-                    return await app.send_message(config.LOG_GROUP_ID, f"الواد {message.from_user.mention} دا بينادي عليك \n\n الايدي بتاعه : {sender_id} \n\n اسمه : {sender_name}")
-      
