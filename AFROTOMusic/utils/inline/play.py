@@ -9,6 +9,9 @@ from AFROTOMusic.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
+    usr = await client.get_users(OWNER_ID)
+    name = usr.first_name
+    usrnam = usr.username
     buttons = [
         [
             InlineKeyboardButton(
@@ -69,7 +72,8 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="ᯓ 𝚂𝙺𝙸𝙿 ‌", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="ᯓ 𝚂𝚃𝙾𝙿 ", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
-             InlineKeyboardButton(user_id=config.OWNER_ID),
+             
+                    InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
         ],[
             InlineKeyboardButton(text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
@@ -86,7 +90,8 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="ᯓ 𝚂𝙺𝙸𝙿 ‌", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="ᯓ 𝚂𝚃𝙾𝙿 ", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
-            InlineKeyboardButton(user_id=config.OWNER_ID),
+            
+         InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
         ],[
             InlineKeyboardButton(text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
