@@ -27,7 +27,7 @@ def private_panel(_):
                 url=f"https://t.me/{app.username}?startgroup=Commands&admin=ban_users+restrict_members+delete_messages+add_admins+change_info+invite_users+pin_messages+manage_call+manage_chat+manage_video_chats+promote_members",
             )
         ],
-        [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
+        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
         [
             InlineKeyboardButton(text=_["S_B_6"], url="https://t.me/UI_VM"),
         ],
