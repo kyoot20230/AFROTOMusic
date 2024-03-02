@@ -13,7 +13,7 @@ def start_panel(_):
             )
         ],
         [
-            InlineKeyboardButton(text=_["S_B_6"], url="https://t.me/SOURCE_ALPOP"),
+         [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         ],
         [
             InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
@@ -38,7 +38,7 @@ def private_panel(_):
             )
         ],
         [
-            InlineKeyboardButton(text=_["S_B_6"], url="https://t.me/SOURCE_ALPOP"),
+         [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         ],
         [
             InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
