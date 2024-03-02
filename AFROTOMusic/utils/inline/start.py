@@ -14,7 +14,9 @@ def start_panel(_):
         ],
 [
             InlineKeyboardButton(
-                text="⭓ADD✘ME", url=f"https://t.me/{app.username}?startgroup=true"
+                text="⭓ADD✘ME",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
     ]
     return buttons
@@ -31,10 +33,11 @@ InlineKeyboardButton(
         [
             InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
             InlineKeyboardButton(text="ᑕᕼᗩᑎᑎEᒪ", url=config.SUPPORT_CHANNEL),
-        ],
-[
+        [
             InlineKeyboardButton(
-                text="⭓ADD✘ME", url=f"https://t.me/{app.username}?startgroup=true"
+                text="⭓ADD✘ME",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
     ]
     return buttons
