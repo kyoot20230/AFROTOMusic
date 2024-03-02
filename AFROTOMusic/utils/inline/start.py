@@ -12,6 +12,9 @@ def start_panel(_):
             InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
         ],
         [
+        InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
+        ],
+        [
          
             InlineKeyboardButton(text="ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪", url=f"https://t.me/VVYVVJ"),
         ],
