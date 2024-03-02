@@ -28,6 +28,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", None))
 # Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 5904216848))
 
+# Fill this variable if your upstream repository is private
 OWNER_CHANNEL = int(getenv("OWNER_CHANNEL", https://t.me/UI_VM))
 
 ## Fill these variables if you're deploying on heroku.
