@@ -1,11 +1,12 @@
 import math
 
+import config
 from AFROTOMusic import app 
 
 from pyrogram.types import InlineKeyboardButton
 
 from AFROTOMusic.utils.formatters import time_to_seconds
-from config import OWNER_ID
+
 
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
