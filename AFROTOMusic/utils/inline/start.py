@@ -6,7 +6,7 @@ from AFROTOMusic import app
 
 def start_panel(_):
     buttons = [
-        ],
+    [
          [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
             InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
@@ -26,8 +26,9 @@ def start_panel(_):
 def private_panel(_):
     buttons = [
        
-        ],
-            [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
+InlineKeyboardButton(
+            [
+           [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
             InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
             InlineKeyboardButton(text="ᑕᕼᗩᑎᑎEᒪ", url=config.SUPPORT_CHANNEL),
