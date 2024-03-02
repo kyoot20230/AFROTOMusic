@@ -94,7 +94,7 @@ command = ["/"]
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/a6bb21ee60a809196f304.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/6e9124c9956875d0de245.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://telegra.ph/file/04b2f1f1c808dc49db35b.jpg"
