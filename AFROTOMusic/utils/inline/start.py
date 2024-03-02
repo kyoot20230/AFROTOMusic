@@ -15,7 +15,7 @@ def start_panel(_):
         [
          
             InlineKeyboardButton(
-                text="ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ",
+                text="⭓ADD✘ME",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
