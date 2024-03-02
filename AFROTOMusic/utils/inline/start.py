@@ -12,14 +12,14 @@ def start_panel(_):
             InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
             InlineKeyboardButton(text="ᑕᕼᗩᑎᑎEᒪ", url=config.SUPPORT_CHANNEL),
         ],
-                [
+[
             InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=Commands&admin=ban_users+restrict_members+delete_messages+add_admins+change_info+invite_users+pin_messages+manage_call+manage_chat+manage_video_chats+promote_members",
-            )
+                text="⭓ADD✘ME", url=f"https://t.me/{app.username}?startgroup=true"
         ],
     ]
     return buttons
+
+
 
 
 def private_panel(_):
@@ -32,11 +32,11 @@ InlineKeyboardButton(
             InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
             InlineKeyboardButton(text="ᑕᕼᗩᑎᑎEᒪ", url=config.SUPPORT_CHANNEL),
         ],
-                [
+[
             InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=Commands&admin=ban_users+restrict_members+delete_messages+add_admins+change_info+invite_users+pin_messages+manage_call+manage_chat+manage_video_chats+promote_members",
-            )
+                text="⭓ADD✘ME", url=f"https://t.me/{app.username}?startgroup=true"
         ],
     ]
     return buttons
+
+
