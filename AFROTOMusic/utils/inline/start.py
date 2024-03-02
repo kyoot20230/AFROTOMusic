@@ -6,11 +6,6 @@ from AFROTOMusic import app
 
 def start_panel(_):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text="ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
         ],
          [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
@@ -19,7 +14,10 @@ def start_panel(_):
         ],
         [
          
-            InlineKeyboardButton(text="ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪", url=f"https://t.me/VVYVVJ"),
+            InlineKeyboardButton(
+                text="ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
     ]
     return buttons
@@ -27,11 +25,7 @@ def start_panel(_):
 
 def private_panel(_):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text="ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
+       
         ],
             [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
@@ -40,7 +34,9 @@ def private_panel(_):
         ],
         [
          
-            InlineKeyboardButton(text="ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪", url=f"https://t.me/VVYVVJ"),
+            InlineKeyboardButton(
+                text="⭓ADD✘ME",
+                url=f"https://t.me/{app.username}?startgroup=true",
         ],
     ]
     return buttons
