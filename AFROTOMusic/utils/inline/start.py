@@ -12,11 +12,14 @@ def start_panel(_):
             InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
         ],
         [
-        InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
         ],
         [
-         
-            InlineKeyboardButton(text="ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪", url=f"https://t.me/VVYVVJ"),
+        InlineKeyboardButton(
+                text="⭓ADD✘ME",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
+        ],
         ],
     ]
     return buttons
@@ -24,20 +27,19 @@ def start_panel(_):
 
 def private_panel(_):
     buttons = [
+         [
+            InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX),
+            InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
+        ],
         [
-            InlineKeyboardButton(
-                text="ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ",
+        InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
+        ],
+        [
+        InlineKeyboardButton(
+                text="⭓ADD✘ME",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
-        [InlineKeyboardButton(text="父 الأوامر 父", callback_data="zzzback")],
-        [
-            InlineKeyboardButton(text="ᗪEᐯEᒪOᑭEᖇ", user_id=config.OWNER_ID),
-            InlineKeyboardButton(text="ᑕᕼᗩᑎᑎEᒪ", url=config.SUPPORT_CHANNEL),
-        ],
-        [
-         
-            InlineKeyboardButton(text="ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪", url=f"https://t.me/VVYVVJ"),
         ],
     ]
     return buttons
