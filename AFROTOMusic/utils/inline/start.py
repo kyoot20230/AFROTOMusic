@@ -7,18 +7,13 @@ from AFROTOMusic import app
 def start_panel(_):
     buttons = [
         [
-           InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
-        ],
-        [
-            InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
-            InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
-        ],
-        [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
-        [
             InlineKeyboardButton(
-                text="⭓ADD✘ME",
-                url=f"https://t.me/{app.username}?startgroup=true",
+                text=_["S_B_1"],
+                url=f"https://t.me/{app.username}?startgroup=Commands&admin=ban_users+restrict_members+delete_messages+add_admins+change_info+invite_users+pin_messages+manage_call+manage_chat+manage_video_chats+promote_members",
             )
+        ],
+        [
+            InlineKeyboardButton(text=_["S_B_6"], url="https://t.me/SOURCE_ALPOP"),
         ],
     ]
     return buttons
@@ -27,19 +22,14 @@ def start_panel(_):
 def private_panel(_):
     buttons = [
         [
-           InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
-        ],
-        [
-            InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
-            InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"https://t.me/{app.username}?startgroup=Commands&admin=ban_users+restrict_members+delete_messages+add_admins+change_info+invite_users+pin_messages+manage_call+manage_chat+manage_video_chats+promote_members",
+            )
         ],
         [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
-            InlineKeyboardButton(
-                text="⭓ADD✘ME",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
+            InlineKeyboardButton(text=_["S_B_6"], url="https://t.me/SOURCE_ALPOP"),
         ],
     ]
     return buttons
-
