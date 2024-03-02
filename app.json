@@ -25,7 +25,7 @@
       "OWNER_CHANNEL": {
         "description": "قناه المطور",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING_SESSION": {
         "description": "⦗ V2 ⦘ ↫ كـود جلسـة الحسـاب المساعـد لـ الميـوزك",
