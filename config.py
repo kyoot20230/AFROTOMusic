@@ -126,3 +126,8 @@ if SUPPORT_CHANNEL:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
+if OWNER_CHANNEL:
+    if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
+        raise SystemExit(
+            "[ERROR] - Your OWNER_CHANNEL url is wrong. Please ensure that it starts with https://"
+    )
