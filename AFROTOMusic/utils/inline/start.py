@@ -13,7 +13,7 @@ def start_panel(_):
             InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
             InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
         ],
-        [InlineKeyboardButton(text=_["父 الأوامر 父"], callback_data="settings_back_helper")],
+        [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
             InlineKeyboardButton(
                 text="⭓ADD✘ME",
@@ -33,7 +33,7 @@ def private_panel(_):
             InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
             InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
         ],
-        [InlineKeyboardButton(text=_["父 الأوامر 父"], callback_data="settings_back_helper")],
+        [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
             InlineKeyboardButton(
                 text="⭓ADD✘ME",
