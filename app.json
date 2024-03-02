@@ -21,8 +21,7 @@
         "description": "⦗ ايـــدي المطـــور ⦘ ↫ مطـــور بـــوت الميـــوزك",
         "value": "",
         "required": true
-        
-      },
+       },
       "OWNER_CHANNEL": {
         "description": "قناه المطور",
         "value": "",
