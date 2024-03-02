@@ -16,8 +16,8 @@ async def zdatsr(client: Client, message: Message):
     name = usr.first_name
     usrnam = usr.username
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/04b2f1f1c808dc49db35b.jpg",
-        caption=f"""<b>» مرحبـاً بك عـزيـزي </b> {message.from_user.mention} .\n\n<b>» استخـدم الازرار بالاسفـل 𝄞\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
+        photo=f"https://telegra.ph/file/04598a67494ae0482408d.jpg",
+        caption=f"""<b>↯︙مرحباً بك عزيزي</b>\n<b>↯︙استخدم الازرار بالاسفل\n» ل تصفح اوامر الميوزك</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -35,7 +35,7 @@ async def zdatsr(client: Client, message: Message):
                     InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
                 ],[
                     InlineKeyboardButton(
-                        "ᯓ 𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 𝅘𝅥𝅯", url="https://t.me/UI_VM"),
+                        "‹ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗟𝗣𝗢𝗣 ›", url="https://t.me/SOURCE_ALPOP"),
                 ],
             ]
         ),
@@ -59,7 +59,7 @@ reply_markup=InlineKeyboardMarkup(
             [            
               InlineKeyboardButton (name, url=f"https://t.me/{usrnam}"),
             ],[
-              InlineKeyboardButton("ᯓ 𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 𝅘𝅥𝅯", url="https://t.me/UI_VM"),
+              InlineKeyboardButton("𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗟𝗣𝗢𝗣", url="https://t.me/source_alpop"),
             ],
           ]
        )                 
