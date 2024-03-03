@@ -18,8 +18,9 @@ def start_panel(_):
         [
          
             InlineKeyboardButton(
-                text="⭓ADD✘ME",
-                url=f"https://t.me/{app.username}?startgroup=true"
+                text="⭓ADD✘ME ♪",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
     ]
     return buttons
@@ -39,8 +40,9 @@ def private_panel(_):
         [
          
             InlineKeyboardButton(
-                text="⭓ADD✘ME",
-                url=f"https://t.me/{app.username}?startgroup=true"
+                text="⭓ADD✘ME ♪",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
     ]
     return buttons
