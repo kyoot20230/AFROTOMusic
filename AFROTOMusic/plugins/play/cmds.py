@@ -218,7 +218,6 @@ async def zzzup(_, query: CallbackQuery):
     )
 
 
-
 @app.on_callback_query(filters.regex("zzzsu") & SUDOERS)
 async def zzzsu(_, query: CallbackQuery):
    await query.edit_message_text(
