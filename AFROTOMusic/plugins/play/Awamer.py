@@ -27,17 +27,15 @@ async def cr_source(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "• اوامــر التشغيــل •", callback_data="afropl"),
+                        "• اوامــر التشغيــل •", callback_data="zzzll"),
                     InlineKeyboardButton(
-                        "• اوامـر القنـاة •", callback_data="afroch"),  
+                        "• اوامـر القنـاة •", callback_data="zzzch"),  
                  ],[
                     InlineKeyboardButton(
-                        "• اوامـر الادمـن •", callback_data="afroad"), 
+                        "• اوامـر الادمـن •", callback_data="zzzad"), 
                  ],[
                     InlineKeyboardButton(
-                        "• اوامــر المطــور •", callback_data="afromot"), 
-                InlineKeyboardButton(
-                        "‹ اوامر التسليه ›", callback_data="hmd"), 
+                        "• اوامــر المطــور •", callback_data="zzzdv"), 
                  ],[       
                        
                     InlineKeyboardButton(
@@ -53,35 +51,32 @@ async def cr_source(client: Client, message: Message):
 @app.on_callback_query(filters.regex("zzzback"))
 async def zzzback(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>» مرحبـاً بك عـزيـزي 𝄞</b>\n<b>» استخـدم الازرار بالاسفـل\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",        reply_markup=InlineKeyboardMarkup(
+       f"""<b>» مرحبـاً بك عـزيـزي 𝄞</b>\n<b>» استخـدم الازرار بالاسفـل\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
+        reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• اوامــر التشغيــل •", callback_data="afropl"),
+                        "• اوامــر التشغيــل •", callback_data="zzzll"),
+                ],[
                     InlineKeyboardButton(
-                        "• اوامـر القنـاة •", callback_data="afroch"),  
-                 ],[
+                        "• اوامـر القنـاة •", callback_data="zzzch"),
                     InlineKeyboardButton(
-                        "• اوامـر الادمـن •", callback_data="afroad"), 
-                 ],[
+                        "• اوامـر الادمـن •", callback_data="zzzad"),
+                ],[
                     InlineKeyboardButton(
-                        "• اوامــر المطــور •", callback_data="afromot"), 
-                InlineKeyboardButton(
-                        "‹ اوامر التسليه ›", callback_data="hmd"), 
-                 ],[       
-                       
+                        "• اوامــر المطــور •", callback_data="zzzdv"),
+                ],[
                     InlineKeyboardButton(
-                        "✯ ᯓ 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ⦃𓏛 ✯", url=f"https://t.me/UI_VM"),
+                        "•✯ ᯓ 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ⦃𓏛 ✯•", url="https://t.me/UI_VM"),
                 ],
-
             ]
-
         ),
-
     )
-    
-    @app.on_callback_query(filters.regex("afromot"))
-async def afromot(_, query: CallbackQuery):
+
+
+
+@app.on_callback_query(filters.regex("zzzdv") & SUDOERS)
+async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""<b>» مرحبـاً بك عـزيـزي المطـور </b>\n\n<b>» استخـدم الازرار بالاسفـل 𝄞\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
         reply_markup=InlineKeyboardMarkup(
@@ -103,89 +98,43 @@ async def afromot(_, query: CallbackQuery):
                 ],
             ]
         ),
-    
-    
-@app.on_callback_query(filters.regex("afropl"))
-async def afropl(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""**-  اوامر التشغيل اتبع مايلي
- — — — — — — — — — — 
-
-◇︰ __تشغيل__ أو __شغل__ : لبدء تشغيل الاغاني .
-
-◇︰ __بينج__ : لقياس سرعة النت في البوت .
-
-◇︰أوامر القناة : __تشغيل__ + أسم الأغنية  .
-
-◇︰ __كتم__ او __مؤقت__ : لكتم الأغنية الحالية .
-
-◇︰ __كمل__ : لألغاء كتم الاغنية الحالية .
-
-◇︰ __تخطي__ : لتخطي الأغنية الحالية .
-
-◇︰ __ايقاف__ : لايقاف تشغيل الأغنية الحالية .**""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="zzzback"), 
-                    
-                ]
-            ]
-        )
     )
 
-@app.on_callback_query(filters.regex("afroch"))
-async def afroch(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""**-<b>قائمــة اوامــر التشغيــل فـي القنــاة :</b>
+
+
+@app.on_callback_query(filters.regex("zzzll"))
+async def zzzll(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""
+● <b>قائمــة اوامــر الـتشغـيـل :</b>
 ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
-<b>- ارفـع البـوت إشـراف في القنـاة و شغـل مباشـر</b>
-<b>- ارسـل (/channelplay او ربط) + يـوزر القنـاة لـ الربـط</b>
-<b>- ثم استخـدم الاوامــر بالاسفـل لـ التشغيـل</b>
-ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
-تشغيل + اسم الاغنية
+تشغيل + (اسم الاغنية / رابط الاغنية)
 <b>- لــ تـشـغـيل اغـنـيـة فـي الـمكـالـمـة الـصـوتـيـة</b>
 
-فيديو + اسم المقـطـع
+فيديو + (اسم المقـطـع / رابط المقـطـع)
 <b>- لــ تـشـغـيل فيـديـو فـي الـمكـالـمـة المـرئيـة</b>
 
-ايقاف / انهاء / اسكت
-<b>- لـ إيقـاف تـشغـيـل الـمـوسـيـقـى فـي المكـالمـة</b>
+بحث + الاسـم
+<b>- لـ تحميـل الاغانـي والمقـاطـع الصوتيـه مـن اليوتيـوب</b>
 
-وقف / توقف
-<b>- لـ إيقـاف تشغيـل الموسيـقـى فـي المكالمـة مـؤقتـاً</b>
-
-كمل / استئناف
-<b>- لـ إسـتـئـنـاف تـشغـيـل الـمـوسـيـقـى فـي المكـالمـة</b>
-
-تخطي
-<b>- لـ تخطـي الاغنيـة وتشغيـل الاغنيـة التاليـه</b>
-ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
-/seek + عـدد الثـوانـي
-<b>- لـ تقديـم الاغنيـه لـ الامـام</b>
-/seekback + عـدد الثـوانـي
-<b>- لـ إرجـاع الاغنيـه لـ الخـلف</b>
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
+""",
+       reply_markup=InlineKeyboardMarkup(
+          [
+               [
                     InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="zzzback"), 
-                    
-                ]
-            ]
-        )
+                        "رجـوع", callback_data="zzzback"),
+               ],
+          ]
+        ),
     )
 
 
 
-@app.on_callback_query(filters.regex("afroad"))
-async def afroad(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""**● <b>قائمــة اوامــر الادمــن :</b>
+@app.on_callback_query(filters.regex("zzzad"))
+async def zzzad(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""
+● <b>قائمــة اوامــر الادمــن :</b>
 ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
 
 الاعدادات
@@ -213,49 +162,68 @@ async def afroad(_, callback_query: CallbackQuery):
 <b>- لـ رفـع/تنزيـل ادمـن فـي البـوت</b>
 
 الادمنيه
-<b>- لـ عـرض قائمـة ادمنيـة البـوت</b>-**"",
-        
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
+<b>- لـ عـرض قائمـة ادمنيـة البـوت</b>
+""",
+       reply_markup=InlineKeyboardMarkup(
+          [
+               [
                     InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="zzzback"), 
-                    
-                ]
-            ]
-        )
+                        "رجـوع", callback_data="zzzback"),
+               ],
+          ]
+        ),
     )
 
-@app.on_callback_query(filters.regex("hmd"))
-async def hmd(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""**-  اوامر التسليه
- — — — — — — — — — — 
-كت
-تويت
-شعر
-قول
-صراحه 
-انصحني
 
-- ( all ) لعمل تاك جماعي في المجموعه
 
-— — — — — — — — — — — — — —**""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
+@app.on_callback_query(filters.regex("zzzch"))
+async def zzzch(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""
+● <b>قائمــة اوامــر التشغيــل فـي القنــاة :</b>
+ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
+<b>- ارفـع البـوت إشـراف في القنـاة و شغـل مباشـر</b>
+<b>- ارسـل (/channelplay او ربط) + يـوزر القنـاة لـ الربـط</b>
+<b>- ثم استخـدم الاوامــر بالاسفـل لـ التشغيـل</b>
+ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
+تشغيل + اسم الاغنية
+<b>- لــ تـشـغـيل اغـنـيـة فـي الـمكـالـمـة الـصـوتـيـة</b>
+
+فيديو + اسم المقـطـع
+<b>- لــ تـشـغـيل فيـديـو فـي الـمكـالـمـة المـرئيـة</b>
+
+ايقاف / انهاء / اسكت
+<b>- لـ إيقـاف تـشغـيـل الـمـوسـيـقـى فـي المكـالمـة</b>
+
+وقف / توقف
+<b>- لـ إيقـاف تشغيـل الموسيـقـى فـي المكالمـة مـؤقتـاً</b>
+
+كمل / استئناف
+<b>- لـ إسـتـئـنـاف تـشغـيـل الـمـوسـيـقـى فـي المكـالمـة</b>
+
+تخطي
+<b>- لـ تخطـي الاغنيـة وتشغيـل الاغنيـة التاليـه</b>
+ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
+/seek + عـدد الثـوانـي
+<b>- لـ تقديـم الاغنيـه لـ الامـام</b>
+/seekback + عـدد الثـوانـي
+<b>- لـ إرجـاع الاغنيـه لـ الخـلف</b>
+""",
+       reply_markup=InlineKeyboardMarkup(
+          [
+               [
                     InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="zzzback"), 
-                    
-                ]
-            ]
-        )
+                        "رجـوع", callback_data="zzzback"),
+               ],
+          ]
+        ),
     )
-    
-  @app.on_callback_query(filters.regex("zzzup"))
+
+
+
+@app.on_callback_query(filters.regex("zzzup") & SUDOERS)
 async def zzzup(_, query: CallbackQuery):
-   await zzzup.edit_message_text(
+   await query.edit_message_text(
        f"""
 ● <b>قائمــة اوامــر المطــور :</b>
 ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
@@ -284,7 +252,7 @@ async def zzzup(_, query: CallbackQuery):
 
 
 
-@app.on_callback_query(filters.regex("zzzsu"))
+@app.on_callback_query(filters.regex("zzzsu") & SUDOERS)
 async def zzzsu(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
@@ -372,4 +340,4 @@ async def zzzas(_, query: CallbackQuery):
                ],
           ]
         ),
-    )
+   )
