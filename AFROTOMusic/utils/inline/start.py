@@ -15,7 +15,7 @@ from pyrogram.types import (
 )
 from typing import Union
 from config import SUPPORT_CHANNEL
-from YukkiMusic import app
+from AFROTOMusic import app
 from strings.filters import command
 
 def start_pannel(_):
