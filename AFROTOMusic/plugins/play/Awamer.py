@@ -68,7 +68,7 @@ async def zzzback(_, query: CallbackQuery):
                         "•✯ ᯓ 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ⦃𓏛 ✯•", url="https://t.me/UI_VM"),
                 ],[
                     InlineKeyboardButton(
-                        "رجـوع", callback_data="ggggback"),
+                        "رجـوع", callback_data="zzzback"),
                 ],
             ]
         ),
@@ -343,28 +343,4 @@ async def zzzas(_, query: CallbackQuery):
         ),
    )
     
-    @app.on_callback_query(filters.regex("zzzback"))
-async def zzzback(_, query: CallbackQuery):
-   await query.edit_message_text(
-       f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b> {0} \n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-        [
     
-               InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
-            
-        ],
-         [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
-        [
-            InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
-        ],
-        [
-         
-            InlineKeyboardButton(
-                text="⭓ADD✘ME ♪",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
-        ],
-    ]
-    return buttons
