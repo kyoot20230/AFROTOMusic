@@ -55,7 +55,37 @@ async def cr_source(client: Client, message: Message):
         ),
 
     )
+    
+@app.on_callback_query(filters.regex("zzzback"))
+async def zzzback(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""<b>» مرحبـاً بك عـزيـزي 𝄞</b>\n<b>» استخـدم الازرار بالاسفـل\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "‹ ااوامر التشغيل ›", callback_data="gr"),
+                    InlineKeyboardButton(
+                        "‹ اوامر التفعيل ›", callback_data="ch"),  
+                 ],[
+                    InlineKeyboardButton(
+                        "‹ فتح - قفل ›", callback_data="yyy"), 
+                 ],[
+                    InlineKeyboardButton(
+                        "‹ اوامر الالعاب ›", callback_data="adm"), 
+                InlineKeyboardButton(
+                        "‹ اوامر التسليه ›", callback_data="hmd"), 
+                 ],[       
+                       
+                    InlineKeyboardButton(
+                        "‹ السورس ›", url=f"https://t.me/UI_VM"),
+                ],
 
+            ]
+
+        ),
+
+    )
+    
     
 @app.on_callback_query(filters.regex("gr"))
 async def cr_usage(_, callback_query: CallbackQuery):
@@ -85,7 +115,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
                     
                 ],[
                     InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="الاوامر"), 
+                        "‹ الرئيسية ›", callback_data="zzzback"), 
                     
                 ]
             ]
@@ -125,7 +155,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
                         "‹ رجوع ›", callback_data="gr"), 
                 ],[
                     InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="الاوامر"), 
+                        "‹ الرئيسية ›", callback_data="zzzback"), 
                     
                 ]
             ]
@@ -161,7 +191,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
                         "‹ رجوع ›", callback_data="ch"), 
                 ],[
                     InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="الاوامر"), 
+                        "‹ الرئيسية ›", callback_data="zzzback"), 
                     
                 ]
             ]
@@ -198,7 +228,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
                         "‹ رجوع ›", callback_data="adm"), 
                 ],[
                     InlineKeyboardButton(
-                        "‹ الرئيسية ›", callback_data="الاوامر"), 
+                        "‹ الرئيسية ›", callback_data="zzzback"), 
                     
                 ]
             ]
