@@ -18,8 +18,8 @@ from pyrogram.errors import MessageNotModified
 @app.on_callback_query(filters.regex("الاوامر"))
 async def zzzback(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/f698f60484b7aef0d6f29.jpg",
-        caption=f"""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس البوب \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
+        photo=f"https://telegra.ph/file/dc3a87d3957283eed6163.jpg",
+        caption=f"""**「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس عفرتو \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -33,7 +33,7 @@ async def zzzback(client: Client, message: Message):
                 ],[
                 
                     InlineKeyboardButton(
-                        "𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ", url=f"https://t.me/source_alpop"),
+                        "「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫", url=f"https://t.me/UI_VM"),
                 ],
 
             ]
@@ -47,7 +47,7 @@ async def zzzback(client: Client, message: Message):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**
+        text="""**「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**
 ★¦ اهلا بك عزيزي في قسم اوامر التشغيل في الجروبات
 ★¦ تشغيل + اسم الاغنيه
 ★¦ فديو + اسم الاغنيه
@@ -75,7 +75,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 ★¦ اكتب ( البوب ) لظهور المطور البوب 
 ★¦ اكتب ( مارو ) لظهور المطور مارو
 
-**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
+**「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -95,13 +95,13 @@ async def cr_usage(_, callback_query: CallbackQuery):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**
+        text="""**「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**
 ★¦ اهلا بك عزيزي في قسم اوامر التشغيل في القنوات
 ★¦ شغل + اسم الاغنيه
 ★¦ قناه + اسم الاغنيه
 ★¦ لايقاف الاغاني اكتب ( ايقاف )
 ★¦ اكتب ( تخطي ) عشان تتخطي الاغنيه
-**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
+**「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -122,11 +122,8 @@ async def cr_usage(_, callback_query: CallbackQuery):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**
+        text="""**「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**
 ★¦ اهلا بك عزيزي في قسم اوامر تشغيل الادمن
-★¦ رفع ثانوي
-★¦ تنزيل ثانوي
-★¦ قائمة الثانويين
 ★¦ رفع ادمن
 ★¦ تنزيل ادمن
 ★¦ قائمة الادمن
@@ -160,7 +157,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 ★¦ الاعدادت
 ★¦ بينج
 
-** 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 **""",
+** 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -181,8 +178,8 @@ async def cr_usage(_, callback_query: CallbackQuery):
 @app.on_callback_query(filters.regex("back"))
 async def cr_back(_, callback_query: CallbackQuery):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/f698f60484b7aef0d6f29.jpg",
-        caption=f"""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس البوب \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
+        photo=f"https://telegra.ph/file/dc3a87d3957283eed6163.jpg",
+        caption=f"""**「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس عفرتو \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -196,7 +193,7 @@ async def cr_back(_, callback_query: CallbackQuery):
                 ],[
                 
                     InlineKeyboardButton(
-                        "𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ", url=f"https://t.me/source_alpop"),
+                        "「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」⩫ ", url=f"https://t.me/UI_VM"),
                 ],
 
             ]
