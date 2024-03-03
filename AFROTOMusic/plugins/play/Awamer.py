@@ -22,7 +22,7 @@ from pyrogram.errors import MessageNotModified
 async def cr_source(client: Client, message: Message):
     await message.reply_photo(
       photo=f"https://telegra.ph/file/f90f490b19e32f201ba03.jpg",
-        caption=f"""**- <b>» مرحبـاً بك عـزيـزي </b> {message.from_user.mentio""",
+        caption=f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b> {0} \n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
         reply_markup=InlineKeyboardMarkup(
                    [
                 [
