@@ -8,7 +8,7 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
-            )
+          
         ],
         [InlineKeyboardButton(text="الاوامر", callback_data="settings_back_helper")],
         [
@@ -29,7 +29,7 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
-            )
+            
         ],
         [InlineKeyboardButton(text="الاوامر", callback_data="settings_back_helper")],
         [
