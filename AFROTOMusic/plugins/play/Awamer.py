@@ -68,7 +68,7 @@ async def zzzback(_, query: CallbackQuery):
                         "•✯ ᯓ 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ⦃𓏛 ✯•", url="https://t.me/UI_VM"),
                 ],[
                     InlineKeyboardButton(
-                        "رجـوع", callback_data="ggggBack"),
+                        "رجـوع", callback_data="ggggback"),
                 ],
             ]
         ),
@@ -343,8 +343,8 @@ async def zzzas(_, query: CallbackQuery):
         ),
    )
     
-    @app.on_callback_query(filters.regex("ggggBack"))
-async def zzzback(_, query: CallbackQuery):
+    @app.on_callback_query(filters.regex("ggggback"))
+async def ggggBback(_, query: CallbackQuery):
     [
             InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
             
