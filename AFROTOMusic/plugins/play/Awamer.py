@@ -26,7 +26,7 @@ async def cr_source(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        ""• اوامــر التشغيــل •", callback_data="afropl"),
+                        "• اوامــر التشغيــل •", callback_data="afropl"),
                     InlineKeyboardButton(
                         "• اوامـر القنـاة •", callback_data="afroch"),  
                  ],[
