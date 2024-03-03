@@ -40,33 +40,7 @@ async def zdatsr(client: Client, message: Message):
             ]
         ),
     )
-  app.on_callback_query(filters.regex("zzzback"))
-async def zzzback(_, query: CallbackQuery):
-   await query.edit_message_text(
-       f"""<b>» مرحبـاً بك عـزيـزي 𝄞</b>\n<b>» استخـدم الازرار بالاسفـل\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "• اوامــر التشغيــل •", callback_data="zzzll"),
-                ],[
-                    InlineKeyboardButton(
-                        "• اوامـر القنـاة •", callback_data="zzzch"),
-                    InlineKeyboardButton(
-                        "• اوامـر الادمـن •", callback_data="zzzad"),
-                ],[
-                    InlineKeyboardButton(
-                        "• اوامــر المطــور •", callback_data="zzzdv"),
-                ],[
-                    InlineKeyboardButton(
-                        "•✯ ᴢᴛʜᴏɴ_ᴍᴜsɪᴄ ✯•", url="https://t.me/Zelzal_Music"),
-                ],
-            ]
-        ),
-    )
-
-
-
+  
 @app.on_callback_query(filters.regex("zzzdv") & SUDOERS)
 async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
