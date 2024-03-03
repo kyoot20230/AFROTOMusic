@@ -81,7 +81,7 @@ async def zzzback(_, query: CallbackQuery):
     )
     
     @app.on_callback_query(filters.regex("afromot"))
-async def afromt(_, query: CallbackQuery):
+async def afromot(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""<b>» مرحبـاً بك عـزيـزي المطـور </b>\n\n<b>» استخـدم الازرار بالاسفـل 𝄞\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
         reply_markup=InlineKeyboardMarkup(
