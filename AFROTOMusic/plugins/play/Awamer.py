@@ -35,7 +35,6 @@ async def cr_source(client: Client, message: Message):
                     InlineKeyboardButton(
                         "اوامر الادمن", callback_data="zzzad"),
  
-                ],[
                     InlineKeyboardButton(
                      " اوامــر المطــور ", callback_data="zzzdv"),
                  ],[
@@ -61,8 +60,7 @@ async def zzzback(_, query: CallbackQuery):
                     
                     InlineKeyboardButton(
                         "اوامر الادمن", callback_data="zzzad"),
- 
-                ],[
+
                     InlineKeyboardButton(
                             " اوامــر المطــور ", callback_data="zzzdv"),
                 ],[ 
