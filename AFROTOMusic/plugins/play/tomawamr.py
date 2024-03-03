@@ -15,7 +15,7 @@ from pyrogram.errors import MessageNotModified
 
 
 
-@app.on_callback_query(filters.regex("zzzback"))
+@app.on_callback_query(filters.regex("الاوامر"))
 async def zzzback(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/f698f60484b7aef0d6f29.jpg",
