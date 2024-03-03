@@ -14,7 +14,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from pyrogram.errors import MessageNotModified
 
 
-
+@app.on_callback_query(filters.regex("zzzback"))
 @app.on_message(
     command("الاوامر")
 )
