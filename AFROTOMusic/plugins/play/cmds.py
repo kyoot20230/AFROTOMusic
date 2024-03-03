@@ -5,7 +5,7 @@ import pyrogram
 from pyrogram import Client, filters, emoji
 from strings.filters import command
 from typing import Union
-from pyrogram.types import InlineKeyboardButton, CallbackQuery, InlineKeyboardMarkup, Messageup
+from pyrogram.types import InlineKeyboardButton, CallbackQuery, InlineKeyboardMarkup
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import InlineKeyboardButton
 from AFROTOMusic import app
