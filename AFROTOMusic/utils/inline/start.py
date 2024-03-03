@@ -10,7 +10,7 @@ def start_panel(_):
             InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
           
         ],
-        [InlineKeyboardButton(text="الاوامر", callback_data="settings_back_helper")],
+         [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
             InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
@@ -32,7 +32,7 @@ def private_panel(_):
             InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
             
         ],
-        [InlineKeyboardButton(text="الاوامر", callback_data="settings_back_helper")],
+         [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
             InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
