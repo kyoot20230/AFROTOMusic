@@ -2,7 +2,7 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from ZelzalMusic import app
+from AFROTOMusic import app
 
 
 def start_panel(_):
