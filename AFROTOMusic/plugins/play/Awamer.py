@@ -343,10 +343,15 @@ async def zzzas(_, query: CallbackQuery):
         ),
    )
     
-    @app.on_callback_query(filters.regex("ggggback"))
-async def ggggBback(_, query: CallbackQuery):
-    [
-            InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
+    @app.on_callback_query(filters.regex("zzzback"))
+async def zzzback(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b> {0} \n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+        [
+    
+               InlineKeyboardButton(text="المطور", user_id=config.OWNER_ID),
             
         ],
          [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
