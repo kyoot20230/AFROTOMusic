@@ -79,8 +79,9 @@ async def zzzback(_, query: CallbackQuery):
         ),
 
     )
+    
     @app.on_callback_query(filters.regex("afromt"))
-async def mpdtsf(_, query: CallbackQuery):
+async def afromt(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""<b>» مرحبـاً بك عـزيـزي المطـور </b>\n\n<b>» استخـدم الازرار بالاسفـل 𝄞\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
         reply_markup=InlineKeyboardMarkup(
@@ -105,7 +106,7 @@ async def mpdtsf(_, query: CallbackQuery):
     
     
 @app.on_callback_query(filters.regex("afropl"))
-async def cr_usage(_, callback_query: CallbackQuery):
+async def afropl(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
         text="""**-  اوامر التشغيل اتبع مايلي
@@ -136,7 +137,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
     )
 
 @app.on_callback_query(filters.regex("afroch"))
-async def cr_usage(_, callback_query: CallbackQuery):
+async def afroch(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
         text="""**-<b>قائمــة اوامــر التشغيــل فـي القنــاة :</b>
@@ -178,8 +179,10 @@ async def cr_usage(_, callback_query: CallbackQuery):
         )
     )
 
+
+
 @app.on_callback_query(filters.regex("afroad"))
-async def cr_usage(_, callback_query: CallbackQuery):
+async def afroad(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
         text="""**● <b>قائمــة اوامــر الادمــن :</b>
@@ -224,7 +227,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
     )
 
 @app.on_callback_query(filters.regex("hmd"))
-async def cr_usage(_, callback_query: CallbackQuery):
+async def hmd(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
         text="""**-  اوامر التسليه
@@ -250,9 +253,9 @@ async def cr_usage(_, callback_query: CallbackQuery):
         )
     )
     
-  @app.on_callback_query(filters.regex("zzzup") & SUDOERS)
+  @app.on_callback_query(filters.regex("zzzup"))
 async def zzzup(_, query: CallbackQuery):
-   await query.edit_message_text(
+   await zzzup.edit_message_text(
        f"""
 ● <b>قائمــة اوامــر المطــور :</b>
 ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
@@ -281,7 +284,7 @@ async def zzzup(_, query: CallbackQuery):
 
 
 
-@app.on_callback_query(filters.regex("zzzsu") & SUDOERS)
+@app.on_callback_query(filters.regex("zzzsu"))
 async def zzzsu(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
