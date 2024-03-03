@@ -41,7 +41,7 @@ async def zdatsr(client: Client, message: Message):
         ),
     )
   
-@app.on_callback_query(filters.regex("zzzdv")
+@app.on_callback_query(filters.regex("zzzdv"))
 async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""<b>» مرحبـاً بك عـزيـزي المطـور </b>\n\n<b>» استخـدم الازرار بالاسفـل 𝄞\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
