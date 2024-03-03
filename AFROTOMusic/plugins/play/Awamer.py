@@ -58,7 +58,7 @@ async def zzzback(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "• اوامــر التشغيــل •", callback_data="afropl"),
                     InlineKeyboardButton(
-                        "• اوامـر القنـاة •", callback_data="afroch),  
+                        "• اوامـر القنـاة •", callback_data="afroch"),  
                  ],[
                     InlineKeyboardButton(
                         "• اوامـر الادمـن •", callback_data="afroad"), 
@@ -181,8 +181,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**- 
-● <b>قائمــة اوامــر الادمــن :</b>
+        text="""**● <b>قائمــة اوامــر الادمــن :</b>
 ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
 
 الاعدادات
@@ -210,22 +209,8 @@ async def cr_usage(_, callback_query: CallbackQuery):
 <b>- لـ رفـع/تنزيـل ادمـن فـي البـوت</b>
 
 الادمنيه
-<b>- لـ عـرض قائمـة ادمنيـة البـوت</b>
-""",— — — — — — — — — — — — — —
-
-- العكس ↫ لعبة عكس الكلمات 
-
-- امثله ↫ لعبة امثله مسليه
-
-- لو خيروك ↫ لعبة لو خيروك
-
-- كلمات ↫ لعبة كلمات 
-
-- صراحه ↫ لعبة صراحه
-
-- نشط عقلك ↫ لعبة اسئلة عامة
-
-— — — — — — — — — — — — —""",
+<b>- لـ عـرض قائمـة ادمنيـة البـوت</b>-**"",
+        
         reply_markup=InlineKeyboardMarkup(
             [
                 [
