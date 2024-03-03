@@ -22,23 +22,22 @@ from pyrogram.errors import MessageNotModified
 async def cr_source(client: Client, message: Message):
     await message.reply_photo(
       photo=f"https://telegra.ph/file/f90f490b19e32f201ba03.jpg",
-        caption=f"""**- <b>» مرحبـاً بك عـزيـزي </b> {message.from_user.mention} .\n\n<b>» استخـدم الازرار بالاسفـل 𝄞\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
+        caption=f"""**- <b>» مرحبـاً بك عـزيـزي </b> {message.from_user.mentio""",
         reply_markup=InlineKeyboardMarkup(
-            [
+                   [
                 [
                     InlineKeyboardButton(
-                        "• اوامــر التشغيــل •", callback_data="zzzll"),
+                        "اوامر التشغيل", callback_data="zzzll"),
+                    InlineKeyboardButton(
+                        "اوامر القنوات", callback_data="zzzch"),
+                ],[
+                    
+                    InlineKeyboardButton(
+                        "اوامر الادمن", callback_data="zzzad"),
+ 
                 ],[
                     InlineKeyboardButton(
-                        "• اوامـر القنـاة •", callback_data="zzzch"),
-                    InlineKeyboardButton(
-                        "• اوامـر الادمـن •", callback_data="zzzad"),
-                ],[
-                    InlineKeyboardButton(
-                        "• اوامــر المطــور •", callback_data="zzzdv"),
-                ],[
-                    InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
-                ],[
+                            " اوامــر المطــور ", callback_data="zzzdv"),
                     InlineKeyboardButton(
                         "•✯ ᯓ 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ⦃𓏛 ✯•", url="https://t.me/UI_VM"),
                 ],
@@ -49,21 +48,22 @@ async def cr_source(client: Client, message: Message):
 @app.on_callback_query(filters.regex("zzzback"))
 async def zzzback(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>» مرحبـاً بك عـزيـزي 𝄞</b>\n<b>» استخـدم الازرار بالاسفـل\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
+       f""""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b> {0} \n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>"""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• اوامــر التشغيــل •", callback_data="zzzll"),
+                        "اوامر التشغيل", callback_data="zzzll"),
+                    InlineKeyboardButton(
+                        "اوامر القنوات", callback_data="zzzch"),
+                ],[
+                    
+                    InlineKeyboardButton(
+                        "اوامر الادمن", callback_data="zzzad"),
+ 
                 ],[
                     InlineKeyboardButton(
-                        "• اوامـر القنـاة •", callback_data="zzzch"),
-                    InlineKeyboardButton(
-                        "• اوامـر الادمـن •", callback_data="zzzad"),
-                ],[
-                    InlineKeyboardButton(
-                        "• اوامــر المطــور •", callback_data="zzzdv"),
-                ],[
+                            " اوامــر المطــور ", callback_data="zzzdv"),
                     InlineKeyboardButton(
                         "•✯ ᯓ 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ⦃𓏛 ✯•", url="https://t.me/UI_VM"),
                 ],
