@@ -2,8 +2,6 @@ import asyncio
 import config
 from pyrogram import Client, filters
 from pyrogram import filters
-from strings import get_string
-from strings.filters import command
 from AFROTOMusic import app
 from config import OWNER_ID
 from AFROTOMusic.misc import SUDOERS
@@ -12,7 +10,7 @@ from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMar
 from AFROTOMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AFROTOMusic.misc import SUDOERS
 
-@app.on_message(command(["ابراج","ابراج"]))
+@app.on_message(filters.command(["ابراج"], ""))
 async def abrag(c: Client, m: Message):
     global mid
     mid = m.message_id
