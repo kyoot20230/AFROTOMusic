@@ -71,6 +71,22 @@ async def get_thumb(videoid):
         circle = Image.open("AFROTOMusic/assets/circle.png")
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
+        image2 = background
+
+        changing circle color
+            im = circle
+            im = im.convert("RGBA")
+            color = make_col()
+
+            data = np.array(im)
+            black, lead, blue, alpha = data.T
+
+            white_areas = (black == 255) & (blue == 255) & (lead == 255)
+            data[..., :-1][white_areas.T] = color
+
+            im2 = Image.fromarray(data)
+            circle = im2
+       
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 30)
         font = ImageFont.truetype("AFROTOMusic/assets/font.ttf", 30)
