@@ -9,7 +9,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFo
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
-from AFROTOMusic import BOT_ID, LOGGER, app
+from AFROTOMusic import LOGGER, app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
