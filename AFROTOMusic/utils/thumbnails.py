@@ -1,14 +1,15 @@
 import os
 import re
+import textwrap
 
 import aiofiles
 import aiohttp
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
-from unidecode import unidecode
-from youtubesearchpython.future import VideosSearch
+import numpy as np
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from youtubesearchpython.__future__ import VideosSearch
 
-from AFROTOMusic import app
-from config import YOUTUBE_IMG_URL
+from config import FAILED
+from AFROTOMusic import BOT_ID, LOGGER, app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -20,19 +21,18 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-def clear(text):
-    list = text.split(" ")
-    title = ""
-    for i in list:
-        if len(title) + len(i) < 60:
-            title += " " + i
-    return title.strip()
+def add_corners(im):
+    bigsize = (im.size[0] * 3, im.size[1] * 3)
+    mask = Image.new("L", bigsize, 0)
+    ImageDraw.Draw(mask).ellipse((0, 0) + bigsize, fill=255)
+    mask = mask.resize(im.size, Image.ANTIALIAS)
+    mask = ImageChops.darker(mask, im.split()[-1])
+    im.putalpha(mask)
 
 
-async def get_thumb(videoid):
-    if os.path.isfile(f"cache/{videoid}.png"):
-        return f"cache/{videoid}.png"
-
+async def gen_thumb(videoid, user_id):
+    if os.path.isfile(f"cache/{videoid}_{user_id}.png"):
+        return f"cache/{videoid}_{user_id}.png"
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
         results = VideosSearch(url, limit=1)
@@ -46,16 +46,16 @@ async def get_thumb(videoid):
             try:
                 duration = result["duration"]
             except:
-                duration = "Unknown Mins"
+                duration = "Unknown"
             thumbnail = result["thumbnails"][0]["url"].split("?")[0]
             try:
-                views = result["viewCount"]["short"]
+                result["viewCount"]["short"]
             except:
-                views = "Unknown Views"
+                pass
             try:
-                channel = result["channel"]["name"]
+                result["channel"]["name"]
             except:
-                channel = "Unknown Channel"
+                pass
 
         async with aiohttp.ClientSession() as session:
             async with session.get(thumbnail) as resp:
@@ -64,13 +64,35 @@ async def get_thumb(videoid):
                     await f.write(await resp.read())
                     await f.close()
 
+        try:
+            wxy = await app.download_media(
+                (await app.get_users(user_id)).photo.big_file_id,
+                file_name=f"{user_id}.jpg",
+            )
+        except:
+            wxy = await app.download_media(
+                (await app.get_users(BOT_ID)).photo.big_file_id,
+                file_name=f"{BOT_ID}.jpg",
+            )
+
+        xy = Image.open(wxy)
+        a = Image.new("L", [640, 640], 0)
+        b = ImageDraw.Draw(a)
+        b.pieslice([(0, 0), (640, 640)], 0, 360, fill=255, outline="white")
+        c = np.array(xy)
+        d = np.array(a)
+        e = np.dstack((c, d))
+        f = Image.fromarray(e)
+        x = f.resize((107, 107))
+
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"AFROTOMusic/assets/circle.png")
-        image1 = changeImageSize(1280, 720, youtube) 
+        image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(10))
+        background = image2.filter(filter=ImageFilter.BoxBlur(30))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
+
         image3 = changeImageSize(1280, 720, bg)
         image5 = image3.convert("RGBA")
         Image.alpha_composite(background, image5).save(f"cache/temp{videoid}.png")
@@ -100,9 +122,9 @@ async def get_thumb(videoid):
 
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 45)
-        ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 70)
+        ImageFont.truetype("AFROTOMusic/assets//font2.ttf", 70)
         arial = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 30)
-        ImageFont.truetype("AFROTOMusic/assets/font.ttf", 30)
+        ImageFont.truetype("AFROTOMusic/assets//font.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
             draw.text(
@@ -244,8 +266,8 @@ async def gen_qthumb(videoid, user_id):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("AFROTOMusic/assets/font2.ttff", 45)
-        ImageFont.truetype("AFROTOMusic/assets/font2.ttf, 70)
+        font = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 45)
+        ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 70)
         arial = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 30)
         ImageFont.truetype("AFROTOMusic/assets/font.ttf", 30)
         para = textwrap.wrap(title, width=32)
