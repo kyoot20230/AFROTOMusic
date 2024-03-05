@@ -73,29 +73,35 @@ async def play(i):
     
            
        
+def get_prayer_times(city):
+    prayer_times = {}
+    try:
+        response = requests.get(f"http://api.aladhan.com/timingsByAddress?address={city}&method=4&school=0")
+        data = response.json()
+        prayer_times = data['data']['timings']
+    except Exception as e:
+        print(e)
+    return prayer_times
 
-def prayer_time():
-   try:
-       prayer = requests.get(f"http://api.aladhan.com/timingsByAddress?address=Cairo&method=4&school=0")
-       prayer = prayer.json()
-       fajr = datetime.strptime(prayer['data']['timings']['Fajr'], '%H:%M').strftime('%I:%M %p')
-       dhuhr = datetime.strptime(prayer['data']['timings']['Dhuhr'], '%H:%M').strftime('%I:%M %p')
-       asr = datetime.strptime(prayer['data']['timings']['Asr'], '%H:%M').strftime('%I:%M %p')
-       maghrib = datetime.strptime(prayer['data']['timings']['Maghrib'], '%H:%M').strftime('%I:%M %p')
-       isha = datetime.strptime(prayer['data']['timings']['Isha'], '%H:%M').strftime('%I:%M %p')
-       if datetime.now(tz).strftime('%I:%M %p') == fajr:
-         return "الفجر"
-       elif datetime.now(tz).strftime('%I:%M %p') == dhuhr:
-         return "الظهر"
-       elif datetime.now(tz).strftime('%I:%M %p') == asr:
-         return "العصر"
-       elif datetime.now(tz).strftime('%I:%M %p') == maghrib:
-         return "المغرب"
-       elif datetime.now(tz).strftime('%I:%M %p') == isha:  
-         return "العشاء"
-   except Exception as e:
-       asyncio.sleep(5)
-       print(e)  
+def check_current_prayer(prayer_times):
+    current_time = datetime.now(pytz.timezone('Africa/Cairo')).strftime('%I:%M %p')
+    for prayer, time in prayer_times.items():
+        prayer_time = datetime.strptime(time, '%H:%M').strftime('%I:%M %p')
+        if current_time == prayer_time:
+            return prayer
+    return None
+
+def main():
+    try:
+        city = "Cairo"
+        prayer_times = get_prayer_times(city)
+        current_prayer = check_current_prayer(prayer_times)
+        if current_prayer:
+            print("حان الآن وقت صلاة:", current_prayer)
+        else:
+            print("لا يوجد صلاة في هذا الوقت.")
+    except Exception as e:
+        print(e)
 #لالالالا
 # جتة مواعيد الصلاة الي تحت دي سارقها من هلال علشان م بعرف استخدم مكتبة ال time ف انضموا لقناته @SOURCEFR3ON
 
