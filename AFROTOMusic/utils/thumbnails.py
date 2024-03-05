@@ -9,6 +9,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from youtubesearchpython.__future__ import VideosSearch
 import numpy as np
 from config import FAILED
+from AFROTOMusic import BOT_ID, LOGGER, app
 
 
 
