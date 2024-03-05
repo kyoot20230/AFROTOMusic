@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from youtubesearchpython.__future__ import VideosSearch
 import numpy as np
 from config import FAILED
-from config import YOUTUBE_IMG_URL
+
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -318,4 +318,4 @@ async def gen_qthumb(videoid, user_id):
         return f"cache/que{videoid}_{user_id}.png"
     except Exception as e:
         print(e)
-        return YOUTUBE_IMG_URL
+        return FAILED
