@@ -23,29 +23,29 @@ async def gbanrep(c: Client, m: Message, strings):
         for per in sudoers:
             if m.reply_to_message.from_user.id == per:
                 leader = True
-        if m.reply_to_message.from_user.id == 5904216848:
+        if m.reply_to_message.from_user.id == 7118337980:
             await m.reply_text("↯︙لايمكننى حظر مطور السورس\n↯", reply_to_message_id=m.message_id)
-            await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+            await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
             return
         else:
-            if m.reply_to_message.from_user.id == 5904216848:
+            if m.reply_to_message.from_user.id == 7118337980:
                 await m.reply_text("↯︙²لايمكننى حظر مطور السورس\n↯", reply_to_message_id=m.message_id)
-                await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+                await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
                 return
             else:
                 if m.reply_to_message.from_user.id == get_bot_information()[0]:
                     await m.reply_text("↯︙لايمكننى حظر البوت\n↯", reply_to_message_id=m.message_id)
-                    await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+                    await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
                     return
                 else:
                     if leader:
                         await m.reply_text("↯︙لايمكننى حظر المطور الاساسي\n↯", reply_to_message_id=m.message_id)
-                        await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+                        await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
                         return
                     else:
                         if sudooo2(m.reply_to_message.from_user.id):
                             await m.reply_text("↯︙لايمكننى حظر المطور\n↯", reply_to_message_id=m.message_id)
-                            await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+                            await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
                             return
         check = await get_available_bot(c, m)
         if check[0] == "banFalse":
@@ -82,9 +82,9 @@ async def gbanuser(c: Client, m: Message, strings):
         for per in sudoers:
             if chat_id_foruser == per:
                 leader = True
-        if chat_id_foruser == 5904216848:
+        if chat_id_foruser == 7118337980:
             await m.reply_text("↯︙لايمكننى حظر مطور السورس\n↯", reply_to_message_id=m.message_id)
-            await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+            await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
             return
         else:
             if chat_id_foruser == 5904216848:
@@ -94,17 +94,17 @@ async def gbanuser(c: Client, m: Message, strings):
             else:
                 if chat_id_foruser == get_bot_information()[0]:
                     await m.reply_text("↯︙لايمكننى حظر البوت\n↯", reply_to_message_id=m.message_id)
-                    await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+                    await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
                     return
                 else:
                     if leader:
                         await m.reply_text("↯︙لايمكننى حظر المطور الاساسي\n↯", reply_to_message_id=m.message_id)
-                        await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+                        await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
                         return
                     else:
                         if sudooo2(chat_id_foruser):
                             await m.reply_text("↯︙لايمكننى حظر المطور\n↯", reply_to_message_id=m.message_id)
-                            await m.reply_animation("https://t.me/UURTBOT/36", reply_to_message_id=m.message_id)
+                            await m.reply_animation("https://t.me/UURTlBOT/36", reply_to_message_id=m.message_id)
                             return
         await m.reply_text(
             strings("ban_success").format(
@@ -176,14 +176,14 @@ async def gmuterep(c: Client, m: Message, strings):
         for per in sudoers:
             if m.reply_to_message.from_user.id == per:
                 leader = True
-        if m.reply_to_message.from_user.id == 5904216848:
+        if m.reply_to_message.from_user.id == 7118337980:
             await m.reply_text("↯︙لايمكننى كتم مطور السورس\n↯", reply_to_message_id=m.message_id)
-            await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+            await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
             return
         else:
-            if m.reply_to_message.from_user.id == 5904216848:
+            if m.reply_to_message.from_user.id == 7118337980:
                 await m.reply_text("↯︙²لايمكننى كتم مطور السورس\n↯", reply_to_message_id=m.message_id)
-                await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+                await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
                 return
             else:
                 if m.reply_to_message.from_user.id == get_bot_information()[0]:
@@ -193,12 +193,12 @@ async def gmuterep(c: Client, m: Message, strings):
                 else:
                     if leader:
                         await m.reply_text("↯︙لايمكننى كتم المطور الاساسي\n↯", reply_to_message_id=m.message_id)
-                        await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+                        await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
                         return
                     else:
                         if sudooo2(m.reply_to_message.from_user.id):
                             await m.reply_text("↯︙لايمكننى كتم المطور\n↯", reply_to_message_id=m.message_id)
-                            await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+                            await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
                             return
         check = await get_available_bot(c, m)
         if check[0] == "banFalse":
@@ -214,7 +214,7 @@ async def gmuterep(c: Client, m: Message, strings):
             reply_to_message_id=m.message_id
         )
 
-        await m.reply_animation("https://t.me/UURTBOT/39", reply_to_message_id=m.message_id)
+        await m.reply_animation("https://t.me/UURTlBOT/39", reply_to_message_id=m.message_id)
 
     except Exception as e:
         await m.reply_text(str(e) + "\n\n" +
@@ -236,27 +236,27 @@ async def gmuteuser(c: Client, m: Message, strings):
                 leader = True
         if chat_id_foruser == 5904216848:
             await m.reply_text("↯︙لايمكننى كتم مطور السورس\n↯", reply_to_message_id=m.message_id)
-            await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+            await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
             return
         else:
             if chat_id_foruser == 5904216848:
                 await m.reply_text("↯︙²لايمكننى كتم مطور السورس\n↯", reply_to_message_id=m.message_id)
-                await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+                await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
                 return
             else:
                 if chat_id_foruser == get_bot_information()[0]:
                     await m.reply_text("↯︙لايمكننى كتم البوت\n↯", reply_to_message_id=m.message_id)
-                    await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+                    await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
                     return
                 else:
                     if leader:
                         await m.reply_text("↯︙لايمكننى كتم المطور الاساسي\n↯", reply_to_message_id=m.message_id)
-                        await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+                        await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
                         return
                     else:
                         if sudooo2(chat_id_foruser):
                             await m.reply_text("↯︙لايمكننى كتم المطور\n↯", reply_to_message_id=m.message_id)
-                            await m.reply_animation("https://t.me/UURTBOT/38", reply_to_message_id=m.message_id)
+                            await m.reply_animation("https://t.me/UURTlBOT/38", reply_to_message_id=m.message_id)
                             return
 
         await m.reply_text(
@@ -267,7 +267,7 @@ async def gmuteuser(c: Client, m: Message, strings):
             reply_to_message_id=m.message_id
         )
         set_db_gmute(chat_id_foruser, chat_name_foruser)
-        await m.reply_animation("https://t.me/UURTBOT/39", reply_to_message_id=m.message_id)
+        await m.reply_animation("https://t.me/UURTlBOT/39", reply_to_message_id=m.message_id)
 
     except Exception as e:
         await m.reply_text(str(e) + "\n\n" +
@@ -311,8 +311,8 @@ async def send_information_groups_enable(c: Client, m: Message):
 ↯︙عدد اعضاء القروب ↫ ⦗ {num_member} ⦘
 ↯︙الرابط ↫ ⦗ {link_group} ⦘
     """
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
     await c.send_message(sudoers[0], messege_send, parse_mode="Markdown")
 
 
@@ -342,8 +342,8 @@ async def send_information_groups_disable(c: Client, m: Message):
 ↯︙عدد اعضاء القروب ↫ ⦗ {num_member} ⦘
 ↯︙الرابط ↫ ⦗ {link_group} ⦘
     """
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
     await c.send_message(sudoers[0], messege_send, parse_mode="Markdown")
 
 
@@ -371,8 +371,8 @@ async def send_information_groups_kick(c, m):
 ↯︙ايدي القروب ↫ ⦗ {id_chat} ⦘
 ↯︙الرابط ↫ ⦗ {link_group} ⦘
     """
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
     await c.send_message(sudoers[0], messege_send, parse_mode="Markdown")
 
 
@@ -466,8 +466,8 @@ async def send_information_user(c: Client, m: Message):
 ↯︙معرفه ↫ {username_user}
 ↯︙ايديه ↫ {id_user}
 """
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
-    await c.send_message(5904216848, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
+    await c.send_message(7118337980, messege_send, parse_mode="Markdown")
     await c.send_message(sudoers[0], messege_send, parse_mode="Markdown")
 
 
