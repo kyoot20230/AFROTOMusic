@@ -30,50 +30,54 @@ def clear(text):
 
 
 async def get_thumb(videoid):
-    if os.path.isfile(f"cache/{videoid}.png"):
-        return f"cache/{videoid}.png"
-
-    url = f"https://www.youtube.com/watch?v={videoid}"
     try:
-        results = VideosSearch(url, limit=1)
-        for result in (await results.next())["result"]:
-            try:
-                title = result["title"]
-                title = re.sub("\W+", " ", title)
-                title = title.title()
-            except:
-                title = "Unsupported Title"
-            try:
-                duration = result["duration"]
-            except:
-                duration = "Unknown Mins"
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
-            try:
-                views = result["viewCount"]["short"]
-            except:
-                views = "Unknown Views"
-            try:
-                channel = result["channel"]["name"]
-            except:
-                channel = "Unknown Channel"
+        if os.path.isfile(f"cache/{videoid}.jpg"):
+            return f"cache/{videoid}.jpg"
 
-        async with aiohttp.ClientSession() as session:
-            async with session.get(thumbnail) as resp:
-                if resp.status == 200:
-                    f = await aiofiles.open(f"cache/thumb{videoid}.png", mode="wb")
-                    await f.write(await resp.read())
-                    await f.close()
+        url = f"https://www.youtube.com/watch?v={videoid}"
+        if 1 == 1:
+            results = VideosSearch(url, limit=1)
+            for result in (await results.next())["result"]:
+                try:
+                    title = result["title"]
+                    title = re.sub("\W+", " ", title)
+                    title = title.title()
+                except:
+                    title = "Unsupported Title"
+                try:
+                    duration = result["duration"]
+                except:
+                    duration = "Unknown Mins"
+                thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+                try:
+                    views = result["viewCount"]["short"]
+                except:
+                    views = "Unknown Views"
+                try:
+                    channel = result["channel"]["name"]
+                except:
+                    channel = "Unknown Channel"
 
-        youtube = Image.open(f"cache/thumb{videoid}.png")
-        image1 = changeImageSize(1280, 720, youtube)
-        image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(30))
-        circle = Image.open("AFROTOMusic/assets/circle.png")
-        enhancer = ImageEnhance.Brightness(background)
-        background = enhancer.enhance(0.6)
-        image2 = background
+            async with aiohttp.ClientSession() as session:
+                async with session.get(
+                    f"http://img.youtube.com/vi/{videoid}/maxresdefault.jpg"
+                ) as resp:
+                    if resp.status == 200:
+                        f = await aiofiles.open(f"cache/thumb{videoid}.jpg", mode="wb")
+                        await f.write(await resp.read())
+                        await f.close()
 
-        changing circle color
+            youtube = Image.open(f"cache/thumb{videoid}.jpg")
+            image1 = changeImageSize(1280, 720, youtube)
+            image2 = image1.convert("RGBA")
+            background = image2.filter(filter=ImageFilter.BoxBlur(30))
+            enhancer = ImageEnhance.Brightness(background)
+            background = enhancer.enhance(0.6)
+            image2 = background
+
+            circle = Image.open("assets/AFYONA.png")
+
+            # changing circle color
             im = circle
             im = im.convert("RGBA")
             color = make_col()
@@ -86,6 +90,7 @@ async def get_thumb(videoid):
 
             im2 = Image.fromarray(data)
             circle = im2
+            # done
        
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 30)
