@@ -1,15 +1,19 @@
+import asyncio
 import os
+import random
 import re
-
+import textwrap
 import aiofiles
 import aiohttp
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
-from unidecode import unidecode
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from youtubesearchpython.__future__ import VideosSearch
+import numpy as np
 
-from AFROTOMusic import app
 from config import YOUTUBE_IMG_URL
 
+
+def make_col():
+    return (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -36,7 +40,7 @@ def truncate(text):
     return [text1, text2]
 
 
-async def get_thumb(videoid):
+async def gent_thumb(videoid):
     try:
         if os.path.isfile(f"cache/{videoid}.jpg"):
             return f"cache/{videoid}.jpg"
@@ -113,10 +117,10 @@ async def get_thumb(videoid):
             image2.paste(circle, (0, 0), mask=circle)
 
             # fonts
-            font1 = ImageFont.truetype("assets/font2.ttf", 30)
-            font2 = ImageFont.truetype("assets/font2.ttf", 70)
-            font3 = ImageFont.truetype("assets/font2.ttf", 40)
-            font4 = ImageFont.truetype("assets/font2.ttf", 35)
+            font1 = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 30)
+            font2 = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 70)
+            font3 = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 40)
+            font4 = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 35)
 
             image4 = ImageDraw.Draw(image2)
             image4.text(
