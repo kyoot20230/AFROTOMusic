@@ -70,7 +70,7 @@ def display_hms(client, callback):
     if hmses.get(str(who_id))["bar"] == in_id:
       callback.answer( hmses.get(str(who_id))["hms"], show_alert = True )
   else:
-    callback.answer( "بطل لعب ف حاجه مش بتاعتك يابابا 🗿", show_alert = True )
+    callback.answer( "هذه الهمسه لاتخصك 🗿", show_alert = True )
     
 @app.on_callback_query(filters.regex("hms_cancel"), group=788166511)
 def display_hms(client, callback):
