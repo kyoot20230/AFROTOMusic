@@ -1,3 +1,4 @@
+
 import asyncio
 import os
 import random
@@ -6,7 +7,7 @@ import textwrap
 import aiofiles
 import aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
-from youtubesearchpython.future import VideosSearch
+from youtubesearchpython.__future__ import VideosSearch
 import numpy as np
 
 from config import YOUTUBE_IMG_URL
@@ -116,7 +117,7 @@ async def get_thumb(videoid):
             image2.paste(image3, (50, 70), mask=image3)
             image2.paste(circle, (0, 0), mask=circle)
 
-# fonts
+            # fonts
             font1 = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 30)
             font2 = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 70)
             font3 = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 40)
@@ -124,14 +125,14 @@ async def get_thumb(videoid):
 
             image4 = ImageDraw.Draw(image2)
             image4.text(
-                (10, 10), "AFROTOO MUSIC", fill="white", font=font1, align="left"
+                (10, 10), "AFROTOO MUSIC ", fill="white", font=font1, align="left"
             )
             image4.text(
                 (670, 150),
-                "AFROTOO Playing",
+                "AFROTOO MUSIC",
                 fill="white",
                 font=font2,
-                stroke_width=3,
+                stroke_width=4,
                 stroke_fill="white",
                 align="left",
             )
@@ -178,3 +179,4 @@ async def get_thumb(videoid):
     except Exception as e:
         print(e)
         return YOUTUBE_IMG_URL
+
