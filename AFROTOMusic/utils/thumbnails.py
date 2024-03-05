@@ -11,6 +11,7 @@ from AFROTOMusic import app
 from config import YOUTUBE_IMG_URL
 
 
+
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
     heightRatio = maxHeight / image.size[1]
@@ -20,39 +21,59 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-    if os.path.isfile(f"cache/{videoid}.png"):
-        return f"cache/{videoid}.png"
+def truncate(text):
+    list = text.split(" ")
+    text1 = ""
+    text2 = ""
+    for i in list:
+        if len(text1) + len(i) < 30:
+            text1 += " " + i
+        elif len(text2) + len(i) < 30:
+            text2 += " " + i
 
-    url = f"https://www.youtube.com/watch?v={videoid}"
+    text1 = text1.strip()
+    text2 = text2.strip()
+    return [text1, text2]
+
+
+async def get_thumb(videoid):
     try:
-        results = VideosSearch(url, limit=1)
-        for result in (await results.next())["result"]:
-            try:
-                title = result["title"]
-                title = re.sub("\W+", " ", title)
-                title = title.title()
-            except:
-                title = "Unsupported Title"
-            try:
-                duration = result["duration"]
-            except:
-                duration = "Unknown Mins"
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
-            try:
-                views = result["viewCount"]["short"]
-            except:
-                views = "Unknown Views"
-            try:
-                channel = result["channel"]["name"]
-            except:
-                channel = "Unknown Channel"
+        if os.path.isfile(f"cache/{videoid}.jpg"):
+            return f"cache/{videoid}.jpg"
 
-        async with aiohttp.ClientSession() as session:
-            async with session.get(thumbnail) as resp:
-                if resp.status == 200:
-                    f = await aiofiles.open(f"cache/thumb{videoid}.png", mode="wb")
-                    await f.write(await resp.read())
-                    await f.close()
+        url = f"https://www.youtube.com/watch?v={videoid}"
+        if 1 == 1:
+            results = VideosSearch(url, limit=1)
+            for result in (await results.next())["result"]:
+                try:
+                    title = result["title"]
+                    title = re.sub("\W+", " ", title)
+                    title = title.title()
+                except:
+                    title = "Unsupported Title"
+                try:
+                    duration = result["duration"]
+                except:
+                    duration = "Unknown Mins"
+                thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+                try:
+                    views = result["viewCount"]["short"]
+                except:
+                    views = "Unknown Views"
+                try:
+                    channel = result["channel"]["name"]
+                except:
+                    channel = "Unknown Channel"
+
+            async with aiohttp.ClientSession() as session:
+                async with session.get(
+                    f"http://img.youtube.com/vi/{videoid}/maxresdefault.jpg"
+                ) as resp:
+                    if resp.status == 200:
+                        f = await aiofiles.open(f"cache/thumb{videoid}.jpg", mode="wb")
+                        await f.write(await resp.read())
+                        await f.close()
+
                     
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
