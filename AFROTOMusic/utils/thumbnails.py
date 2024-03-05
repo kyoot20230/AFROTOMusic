@@ -92,64 +92,64 @@ async def get_thumb(videoid):
             circle = im2
             # done
        
-        image3 = image1.crop((280, 0, 1000, 720))
-            draw = ImageDraw.Draw(lum_img)
-            draw.pieslice([(0, 0), (720, 720)], 0, 360, fill=255, outline="white")
-            img_arr = np.array(image3)
-            lum_img_arr = np.array(lum_img)
-            final_img_arr = np.dstack((img_arr, lum_img_arr))
-            image3 = Image.fromarray(final_img_arr)
-            image3 = image3.resize((600, 600))
-
-            image2.paste(image3, (50, 70), mask=image3)
-            image2.paste(circle, (0, 0), mask=circle)
-       
+          
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AFROTOMusic/assets/font2.ttf", 30)
         font = ImageFont.truetype("AFROTOMusic/assets/font.ttf", 30)
-        draw.text((1110, 8), unidecode(app.name), fill="white", font=arial)
-        draw.text(
-            (55, 560),
-            f"{channel} | {views[:23]}",
-            (255, 255, 255),
-            font=arial,
-        )
-        draw.text(
-            (57, 600),
-            clear(title),
-            (255, 255, 255),
-            font=font,
-        )
-        draw.line(
-            [(55, 660), (1220, 660)],
-            fill="white",
-            width=5,
-            joint="curve",
-        )
-        draw.ellipse(
-            [(918, 648), (942, 672)],
-            outline="white",
-            fill="white",
-            width=15,
-        )
-        draw.text(
-            (36, 685),
-            "00:00",
-            (255, 255, 255),
-            font=arial,
-        )
-        draw.text(
-            (1185, 685),
-            f"{duration[:23]}",
-            (255, 255, 255),
-            font=arial,
-        )
-        try:
-            os.remove(f"cache/thumb{videoid}.png")
-        except:
-            pass
-        background.save(f"cache/{videoid}.png")
-        return f"cache/{videoid}.png"
+        image4 = ImageDraw.Draw(image2)
+            image4.text(
+                (10, 10), "Arnop Music", fill="white", font=font1, align="left"
+            )
+            image4.text(
+                (670, 150),
+                "AFYONA Playing",
+                fill="white",
+                font=font2,
+                stroke_width=2,
+                stroke_fill="white",
+                align="left",
+            )
+
+            # title
+            title1 = truncate(title)
+            image4.text(
+                (670, 300),
+                text=title1[0],
+                fill="white",
+                stroke_width=1,
+                stroke_fill="white",
+                font=font3,
+                align="left",
+            )
+            image4.text(
+                (670, 350),
+                text=title1[1],
+                fill="white",
+                stroke_width=1,
+                stroke_fill="white",
+                font=font3,
+                align="left",
+            )
+
+            # description
+            views = f"Views : {views}"
+            duration = f"Duration : {duration} Mins"
+            channel = f"Channel : @N_G_12"
+
+            image4.text((670, 450), text=views, fill="white", font=font4, align="left")
+            image4.text(
+                (670, 500), text=duration, fill="white", font=font4, align="left"
+            )
+            image4.text(
+                (670, 550), text=channel, fill="white", font=font4, align="left"
+            )
+
+            image2 = ImageOps.expand(image2, border=20, fill=make_col())
+            image2 = image2.convert("RGB")
+            image2.save(f"cache/{videoid}.jpg")
+            file = f"cache/{videoid}.jpg"
+            return file
     except Exception as e:
         print(e)
         return YOUTUBE_IMG_URL
+
