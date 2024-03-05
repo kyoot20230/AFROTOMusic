@@ -5,16 +5,16 @@ from AFROTOMusic import app
 
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
-    if not "https://t.me/UI_VM":  # Not compulsory
+    if not "https://t.me/VVV5P":  # Not compulsory
         return
     try:
         try:
             await bot.get_chat_member("UI_VM", msg.from_user.id)
         except UserNotParticipant:
             if "https://t.me/UI_VM".isalpha():
-                link = "https://t.me/UI_VM"
+                link = "https://t.me/VVV5P"
             else:
-                chat_info = await bot.get_chat("UI_VM")
+                chat_info = await bot.get_chat("VVV5P")
                 link = chat_info.invite_link
             try:
                 await msg.reply(
