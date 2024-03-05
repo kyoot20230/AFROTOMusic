@@ -15,23 +15,23 @@ from random import  choice, randint
 
 #          
                 
-@app.on_message(filters.command(["عفرتو","مطور السورس","مبرمج السورس"],"")
+@app.on_message(filters.command(["الزعيم","مطور السورس","مبرمج السورس"],"")
 )
 async def yas(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/96857cb597b588139fdd5.jpg",
-        caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪](https://t.me/IIUll_l)❫
-◉ 𝚄𝚂𝙴𝚁 : ❪ @IIUll_l ❫
-◉ 𝙸𝙳      : ❪ `5904216848` ❫
-◉ 𝙱𝙸𝙾    : ❪ for me (@UI_VM)  ❫""",
+        photo=f"https://graph.org/file/59258f178623e4109f62a.jpg",
+        caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[سورس ميوزك الزعيم](https://t.me/EEEW2)❫
+◉ 𝚄𝚂𝙴𝚁 : ❪ @T_5_G ❫
+◉ 𝙸𝙳      : ❪ `7118337980` ❫
+◉ 𝙱𝙸𝙾    : ❪ for me (@T_5_G)  ❫""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ْ𓆩⧛ َ 𝘼َِ𝙁َِ𝙍َِ𝙊َِ𝙊َِ𝙏َِ𝙊ِ ┇ عـ๋͜‏ـۂفــ͡ـࢪتوُ ⧚𓆪", url=f"https://t.me/IIUll_l"), 
+                        "سورس ميوزك الزعيم", url=f"https://t.me/T_5_G"), 
                  ],[
                    InlineKeyboardButton(
-                        "「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」", url=f"https://t.me/UI_VM"),
+                        "「سورس ميوزك الزعيم」", url=f"https://t.me/T_5_G"),
                 ],
 
             ]
@@ -56,7 +56,7 @@ async def huhh(client, message):
        [
            [
                InlineKeyboardButton(
-                   "‹ : 𝖬𝖺𝖳𝗋𝗂x 𝖳𝖾𝖠𝗆 : ›", url=f"https://t.me/XMATTMX"),
+                   "‹ : 𝖬𝖺𝖳𝗋𝗂x 𝖳𝖾𝖠𝗆 : ›", url=f"https://t.me/EEEW2"),
            ],
        ]
     ),
