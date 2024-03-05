@@ -14,7 +14,7 @@ from random import  choice, randint
 
                 
 @app.on_message(
-    command(["سورس","‹ السورس ›","عفرتو","السورس", "سورس عفرتو"])
+    command(["سورس","‹ السورس ›","الزعيم","السورس", "سورس الزعيم"])
 )
 async def huhh(client: Client, message: Message):
     await message.reply_video(
@@ -25,13 +25,13 @@ async def huhh(client: Client, message: Message):
         [
             [
                     InlineKeyboardButton(
-                        " 𝙲𝙷𝙰𝙽𝙽𝙴𝙻  ", url=f"https://t.me/UI_VM"),
+                        " قناة السورس  ", url=f"https://t.me/VVV5P"),
                    InlineKeyboardButton(
                     
-                    " 𝙶𝚁𝙾𝚄𝙿 ", url=f"https://t.me/YR_HX"), 
+                    " جروب السورس ", url=f"https://t.me/EEEW2"), 
                 ],[    
                     InlineKeyboardButton(
-                        "𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ", url=f"https://t.me/VVYVVJ"),
+                        "مطور السورس ", url=f"https://t.me/T_5_G"),
                 ],[
                     InlineKeyboardButton(
                         "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/A_Rn_obot?startgroup=true"),
