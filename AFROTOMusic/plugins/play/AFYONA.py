@@ -64,17 +64,17 @@ async def cpanel(_, message: Message):
 
 app.on_message(filters.regex("اخفاء الازرار . 🕷") & filters.group)
 async def down(_, message):
-          m = await message.reply("**- بخدمتك حجي خفيت الازرار\n- اذا تريد تطلعها مرة ثانية اكتب /start**", reply_markup= ReplyKeyboardRemove(selective=True))
+          m = await message.reply("**- بخدمتك حب خفيت الازرار\n- اذا تبي تطلعها مرة ثانية اكتب /start**", reply_markup= ReplyKeyboardRemove(selective=True))
     
 @app.on_message(filters.regex("يـوتيوب. 📽"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
-        photo=f"https://telegra.ph/file/04b2f1f1c808dc49db35b.jpg",
+        photo=f"https://graph.org/file/caeef4bf2ba9bf4f723cd.jpg",
         caption=f"""**يتم استخدام هذا الامر لعرض تحميل من اليوتيوب**\n**استخدم الامر بهذا الشكل** `تنزيل` ** او ** `يوتيوب` ** كمثل تنزيل سوره الرحمن اضغط علي الامر لنسخ والاستخدام**""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("ᯓ 𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 𖠛", url=f"https://t.me/UI_VM"),
+                InlineKeyboardButton("ᯓ سورس ميوزك الزعيم 𖠛", url=f"https://t.me/VVV5P"),
             ]
          ]
      )
