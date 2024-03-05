@@ -74,7 +74,6 @@ async def get_thumb(videoid):
                         await f.write(await resp.read())
                         await f.close()
 
-                    
             youtube = Image.open(f"cache/thumb{videoid}.jpg")
             image1 = changeImageSize(1280, 720, youtube)
             image2 = image1.convert("RGBA")
@@ -83,7 +82,7 @@ async def get_thumb(videoid):
             background = enhancer.enhance(0.6)
             image2 = background
 
-            circle = Image.open("assets/AFYONA.png")
+            circle = Image.open("AFROTOMusic/assets/circle.png")
 
             # changing circle color
             im = circle
