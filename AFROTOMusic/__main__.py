@@ -11,6 +11,7 @@ from AFROTOMusic.misc import sudo
 from AFROTOMusic.plugins import ALL_MODULES
 from AFROTOMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
+from AFROTOMusic.plugins.play.azan import azkar
 
 
 async def init():
