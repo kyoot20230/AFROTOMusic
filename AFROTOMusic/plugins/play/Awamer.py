@@ -20,9 +20,9 @@ from pyrogram.errors import MessageNotModified
     command("الاوامر")
 )
 async def cr_source(client: Client, message: Message):
-    await message.reply_photo(
-      photo=f"https://telegra.ph/file/f90f490b19e32f201ba03.jpg",
-        caption=f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b> {0} \n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
+    await message.reply_video(
+      video=f"https://telegra.ph/file/0913f5246d0532e170e21.mp4",
+        caption=f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b>\n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
         reply_markup=InlineKeyboardMarkup(
                    [
                 [
@@ -48,7 +48,7 @@ async def cr_source(client: Client, message: Message):
 @app.on_callback_query(filters.regex("zzzback"))
 async def zzzback(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b> {0} \n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
+       f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b>\n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -65,10 +65,7 @@ async def zzzback(_, query: CallbackQuery):
                             " اوامــر المطــور ", callback_data="zzzdv"),
                 ],[ 
                     InlineKeyboardButton(
-                        "•✯ ᯓ 「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ⦃𓏛 ✯•", url="https://t.me/UI_VM"),
-                ],[
-                    InlineKeyboardButton(
-                        "رجـوع", callback_data="zzzback"),
+                        "•✯「𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾」، ✯•", url="https://t.me/UI_VM"),
                 ],
             ]
         ),
