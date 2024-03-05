@@ -93,7 +93,6 @@ async def get_thumb(videoid):
             # done
        
         image3 = image1.crop((280, 0, 1000, 720))
-            lum_img = Image.new("L", [720, 720], 0)
             draw = ImageDraw.Draw(lum_img)
             draw.pieslice([(0, 0), (720, 720)], 0, 360, fill=255, outline="white")
             img_arr = np.array(image3)
