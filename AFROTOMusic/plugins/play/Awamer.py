@@ -22,7 +22,7 @@ from pyrogram.errors import MessageNotModified
 async def cr_source(client: Client, message: Message):
     await message.reply_video(
       video=f"https://telegra.ph/file/0913f5246d0532e170e21.mp4",
-        caption=f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b>\n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
+        caption=f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼</b>""",
         reply_markup=InlineKeyboardMarkup(
                    [
                 [
@@ -48,7 +48,7 @@ async def cr_source(client: Client, message: Message):
 @app.on_callback_query(filters.regex("zzzback"))
 async def zzzback(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>╮⦿ مرحبـاً↬</b>\n<b>│᚜⦿ لتحكم في البوت في الاسفل\n<b>╯⦿ 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 المطور عفرتو</b>""",
+       f"""<b>⭓𝙼𝚄𝚂𝙸𝙲✘𝙰𝙵𝚁𝙾𝚃𝙾𝙾 ♪\n<b>⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
