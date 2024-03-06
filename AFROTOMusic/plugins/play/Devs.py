@@ -15,7 +15,7 @@ from random import  choice, randint
 
 #          
                 
-@app.on_message(filters.command(["الزعيم","مطور السورس"," المطور"],"")
+@app.on_message(filters.command(["الزعيم","مطور السورس"," الزعيم"],"")
 )
 async def yas(client: Client, message: Message):
     await message.reply_photo(
