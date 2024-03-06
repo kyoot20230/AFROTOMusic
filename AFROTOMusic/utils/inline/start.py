@@ -12,8 +12,8 @@ def start_panel(_):
         ],
          [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
-            InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text="GROUP", url=f"https://t.me/EEEW2"),
+            InlineKeyboardButton(text="قناة السورس", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text="جروب السورس", url=f"https://t.me/EEEW2"),
         ],
         [
          
@@ -34,8 +34,8 @@ def private_panel(_):
         ],
          [InlineKeyboardButton(text=_["S_B_4"], callback_data="zzzback")],
         [
-            InlineKeyboardButton(text="CHANNEL", url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text="GROUP", url=f"https://t.me/YR_HX"),
+            InlineKeyboardButton(text=" قناة السورس", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text="جروب السورس", url=f"https://t.me/EEEW2"),
         ],
         [
          
