@@ -48,7 +48,7 @@ async def huhh(client, message):
     from_url = f"tg://openmessage?user_id={from_id}"
     ahmed = message.text
     await message.reply_animation(
-        animation=f"https://telegra.ph/file/5a18fe591860a8a98f39f.mp4",
+        animation=f"https://graph.org/file/0dcc6d8776f5486169077.mp4",
         caption=f"""↯︙قتل ↫ ⦗ {app.get_chat(to_id).first_name}]({to_url}) ⦘\nالضحيه دا 😢 ↫ ⦗ [{app.get_chat(from_id).first_name}]({from_url}) ⦘\nانا لله وانـا اليـه راجعـون 😢😢""",
     )
     reply_markup=InlineKeyboardMarkup(
