@@ -67,8 +67,8 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="ᯓ ايقاف ", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="ᯓ تكرار ", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
-            InlineKeyboardButton(text="ᯓ انهاء ‌", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="ᯓ تخطي ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="ᯓ تخطي ‌", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="ᯓ انهاء ", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[    
            InlineKeyboardButton(text="𝗠𝗜𝗨𝗭𝗜𝗞 𝗔𝗟𝗭𝗔𝗘𝗜𝗠 𓄹メ", user_id=config.OWNER_ID),
         ],[
@@ -84,8 +84,8 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="ᯓ ايقاف ", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="ᯓ تكرار ", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
-            InlineKeyboardButton(text="ᯓ انهاء ‌", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="ᯓ تخطي ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="ᯓ تخطي ‌", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="ᯓ انهاء ", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
           InlineKeyboardButton(text="𝗠𝗜𝗨𝗭𝗜𝗞 𝗔𝗟𝗭𝗔𝗘𝗜𝗠 𓄹メ", user_id=config.OWNER_ID),
         ],[
