@@ -20,7 +20,7 @@ from random import  choice, randint
 async def yas(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://graph.org/file/59258f178623e4109f62a.jpg",
-        caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[سورس ميوزك الزعيم](https://t.me/EEEW2)❫
+        caption=f"""◉ 𝙽𝙰𝙼𝙴 : ❪[𝗠𝗜𝗨𝗭𝗜𝗞 𝗔𝗟𝗭𝗔𝗘𝗜𝗠](https://t.me/EEEW2)❫
 ◉ 𝚄𝚂𝙴𝚁 : ❪ @T_5_G ❫
 ◉ 𝙸𝙳      : ❪ `7118337980` ❫
 ◉ 𝙱𝙸𝙾    : ❪ for me (@T_5_G)  ❫""",
@@ -28,10 +28,10 @@ async def yas(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "سورس ميوزك الزعيم", url=f"https://t.me/T_5_G"), 
+                        "𝗠𝗜𝗨𝗭𝗜𝗞 𝗔𝗟𝗭𝗔𝗘𝗜𝗠", url=f"https://t.me/T_5_G"), 
                  ],[
                    InlineKeyboardButton(
-                        "「سورس ميوزك الزعيم」", url=f"https://t.me/T_5_G"),
+                        "「𝗠𝗜𝗨𝗭𝗜𝗞 𝗔𝗟𝗭𝗔𝗘𝗜𝗠」", url=f"https://t.me/T_5_G"),
                 ],
 
             ]
