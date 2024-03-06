@@ -37,7 +37,7 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("AFROTOMusic.plugins" + all_module)
-    LOGGER("ميــوزك عفرتو").info("تم تحميل الاضافات ...✓")
+    LOGGER("ميــوزك الزعيم").info("تم تحميل الاضافات ...✓")
     await userbot.start()
     await Zelzaly.start()
     try:
@@ -50,11 +50,11 @@ async def init():
     except:
         pass
     await Zelzaly.decorators()
-    LOGGER("ميــوزك عفرتو").info("MatrixThon")
+    LOGGER("ميــوزك الزعيم").info("MatrixThon")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("ميــوزك عفرتو").info("جارِ ايقاف بوت الميوزك . . .")
+    LOGGER("ميــوزك الزعيم").info("جارِ ايقاف بوت الميوزك . . .")
 
 
 if __name__ == "__main__":
