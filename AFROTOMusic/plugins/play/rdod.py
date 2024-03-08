@@ -69,7 +69,7 @@ def del_rdod(id) -> bool:
 Programmed by :  @VVV5P
    Channel -› • @EEEW2
 '''
-@app.on_message(filters.regex("^المشرفين$"))
+@app.on_message(filters.regex(""))
 async def adlist(_, message):
     chat_id = message.chat.id
     admin = "- قائمة المشرفين\n— — — — —\n"
@@ -77,7 +77,7 @@ async def adlist(_, message):
            admin+=f"› {'@'+admins.user.username if admins.user.username else admins.user.mention} - `{admins.user.id}` .\n"
     await message.reply(text=(admin))
 
-@app.on_message(filters.regex("^البوتات$"))
+@app.on_message(filters.regex(""))
 async def botslist(_, message):
     chat_id = message.chat.id
     rnryr = "- قائمة البوتات\n— — — — —\n"
@@ -88,7 +88,7 @@ async def botslist(_, message):
 Programmed by :  @VVV5P
    Channel -› • @EEEW2
 '''
-@app.on_message(filters.regex("^اضف رد$") & filters.group)
+@app.on_message(filters.regex("") & filters.group)
 async def adf_rd(client, message):
     get = await get_rtba(message.chat.id, message.from_user.id)
     if not get: return await message.reply("• هذا االأمر لا يخصك")
@@ -107,7 +107,7 @@ async def adf_rd(client, message):
 Programmed by :  @VVV5P
    Channel -› • @EEEW2
 '''
-@app.on_message(filters.regex("^مسح رد$") & filters.group)
+@app.on_message(filters.regex("") & filters.group)
 async def delete_rd(client, message):
    get = await get_rtba(message.chat.id, message.from_user.id)
    if not get: return await message.reply("• هذا االأمر لا يخصك")
@@ -139,7 +139,7 @@ async def delrdood(client, message):
 Programmed by :  @VVV5P
    Channel -› • @EEEW2
 '''
-@app.on_message(filters.regex("افتاره"))
+@app.on_message(filters.regex(""))
 async def her(_, message):
      user_id = message.reply_to_message.from_user.id
      d = await app.get_chat(user_id)
@@ -150,7 +150,7 @@ async def her(_, message):
      else:
         await message.reply(bio)
         
-@app.on_message(filters.regex("افتاري"))
+@app.on_message(filters.regex(""))
 async def my(_, message):
      user_id = message.from_user.id
      b = await app.get_chat(user_id)
@@ -161,7 +161,7 @@ async def my(_, message):
      else:
         await message.reply(bio)
 
-@app.on_message(filters.regex("^بايو$"))
+@app.on_message(filters.regex(""))
 async def Bio(_, message):
     if not message.reply_to_message:
      me = message.from_user.id
@@ -169,7 +169,7 @@ async def Bio(_, message):
      bio = b.bio
      await message.reply_text(bio)
 	
-@app.on_message(filters.regex("^بايو$"))
+@app.on_message(filters.regex(""))
 async def Bio(_, message):
 	if message.reply_to_message:
 		user_id = message.reply_to_message.from_user.id
