@@ -9,24 +9,24 @@ async def must_join_channel(bot: Client, msg: Message):
         return
     try:
         try:
-            await bot.get_chat_member("UI_VM", msg.from_user.id)
+            await bot.get_chat_member("VVV5P", msg.from_user.id)
         except UserNotParticipant:
-            if "https://t.me/UI_VM".isalpha():
+            if "https://t.me/VVV5P".isalpha():
                 link = "https://t.me/VVV5P"
             else:
                 chat_info = await bot.get_chat("VVV5P")
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"⌯︙عذࢪاَ عزيزي ↫ {msg.from_user.mention} \n⌯︙عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n⌯︙قناة البوت: @UI_VM .\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ",
+                    f"⌯︙عذࢪاَ عزيزي ↫ {msg.from_user.mention} \n⌯︙عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n⌯︙قناة البوت: @VVV5P .\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("ᯓ 𝚂𝙾𝚞𝚁𝚂 𝙰𝙵𝚁𝙾𝚃𝙾𝙾 𝅘𝅥𝅯", url=link)]
+                        [InlineKeyboardButton("ᯓ سورس ميوزك الزعيم 𝅘𝅥𝅯", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"I m not admin in the MUST_JOIN chat @UI_VM !")
+        print(f"I m not admin in the MUST_JOIN chat @VVV5P !")
       
