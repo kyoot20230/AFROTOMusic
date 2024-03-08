@@ -22,7 +22,7 @@ from pyrogram.errors import FloodWait
 
 
 array = []
-@app.on_message(filters.command(["@all", "تاك","all"], "") & ~filters.private, group=88)
+@app.on_message(filters.command(["", "",""], "") & ~filters.private, group=88)
 async def nummmm(client: app, message):
   if message.chat.id in array:
      return await message.reply_text("♪ التاك قيد التشغيل الان  💎 .")
