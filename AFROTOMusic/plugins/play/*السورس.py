@@ -18,7 +18,7 @@ from random import  choice, randint
 )
 async def huhh(client: Client, message: Message):
     await message.reply_video(
-        video=f"https://graph.org/file/0dcc6d8776f5486169077.mp4",
+        video=f"https://telegra.ph/file/ad25b873df9aface84c0f.mp4",
         caption=f"""
 ⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼""",
         reply_markup=InlineKeyboardMarkup(
