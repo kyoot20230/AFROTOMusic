@@ -50,7 +50,7 @@ async def strcall(client, message):
         await message.reply(f"{text}")
 @app.on_message(filters.video_chat_started)
 async def brah(client, message):
-       await message.reply(" بدأت المحادثة الصوتية 👤")
+       await message.reply("<b>بدأت المحادثة الصوتية 👤</b>")
 @app.on_message(filters.video_chat_ended)
 async def brah2(client, message):
     da = message.video_chat_ended.duration
@@ -58,34 +58,34 @@ async def brah2(client, message):
     ho = divmod(ma[0], 60)
     day = divmod(ho[0], 24)
     if da < 60:
-       await message.reply(f"تم انهاء مكالمة الفيديو مدتها {da} ثواني وصكرها ")        
+       await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها {da} ثواني وصكرها</b> ")        
     elif 60 < da < 3600:
         if 1 <= ma[0] < 2:
-            await message.reply(f" تم انهاء مكالمة الفيديو مدتها دقيقه")
+            await message.reply(f" <b>تم انهاء مكالمة الفيديو مدتها دقيقه</b>")
         elif 2 <= ma[0] < 3:
-            await message.reply(f" تم انهاء مكالمة الفيديو مدتها دقيقتين ")
+            await message.reply(f" <b>تم انهاء مكالمة الفيديو مدتها دقيقتين<b> ")
         elif 3 <= ma[0] < 11:
-            await message.reply(f"تم انهاء مكالمة الفيديو مدتها {ma[0]} دقايق ")  
+            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها {ma[0]} دقايق<b> ")  
         else:
-            await message.reply(f"تم إنهاء مكالمة الفيديو مدتها {ma[0]} دقيقه")
+            await message.reply(f"<b>تم إنهاء مكالمة الفيديو مدتها {ma[0]} دقيقه<b>")
     elif 3600 < da < 86400:
         if 1 <= ho[0] < 2:
-            await message.reply(f"تم انهاء مكالمة الفيديو مدتها ساعه ")
+            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها ساعه<b> ")
         elif 2 <= ho[0] < 3:
-            await message.reply(f"تم انهاء مكالمة الفيديو مدتها ساعتين ")
+            await message.reply(f"</b>تم انهاء مكالمة الفيديو مدتها ساعتين<b> ")
         elif 3 <= ho[0] < 11:
-            await message.reply(f"تم انهاء مكالمة الفيديو مدتها {ho[0]} ساعات ")  
+            await message.reply(f"</b>تم انهاء مكالمة الفيديو مدتها {ho[0]} ساعات<b> ")  
         else:
-            await message.reply(f"تم إنهاء مكالمة الفيديو مدتها {ho[0]} ساعة ")
+            await message.reply(f"</b>تم إنهاء مكالمة الفيديو مدتها {ho[0]} ساعة<b> ")
     else:
         if 1 <= day[0] < 2:
-            await message.reply(f"تم انهاء مكالمة الفيديو مدتها يوم ")
+            await message.reply(f"</b>تم انهاء مكالمة الفيديو مدتها يوم<b> ")
         elif 2 <= day[0] < 3:
-            await message.reply(f" تم انهاء مكالمة الفيديو مدتها يومين ")
+            await message.reply(f" </b>تم انهاء مكالمة الفيديو مدتها يومين<b> ")
         elif 3 <= day[0] < 11:
-            await message.reply(f" تم انهاء مكالمة الفيديو مدتها {day[0]} ايام ")  
+            await message.reply(f" </b>تم انهاء مكالمة الفيديو مدتها {day[0]} ايام<b> ")  
         else:
-            await message.reply(f" تم إنهاء مكالمة الفيديو مدتها {day[0]} يوم")
+            await message.reply(f" </b>تم إنهاء مكالمة الفيديو مدتها {day[0]} يوم<b>")
 @app.on_message(filters.video_chat_members_invited)
 async def fuckoff(client, message):
            text = f"• قــــام ← {message.from_user.mention}"
