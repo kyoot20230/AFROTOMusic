@@ -18,7 +18,7 @@ def start_panel(_):
         [
          
             InlineKeyboardButton(
-                text="⭓الزعيم✘عبود ♪",
+                text="ᯓ𓆩𖡡𓏺.𝑨𝑳𝒁𝑨𝑰𝑴.𓏺𖡡𓆪",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -40,7 +40,7 @@ def private_panel(_):
         [
          
             InlineKeyboardButton(
-                text="⭓الزعيم✘عبود ♪",
+                text="ᯓ𓆩𖡡𓏺.𝑨𝑳𝒁𝑨𝑰𝑴.𓏺𖡡𓆪",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
