@@ -63,29 +63,29 @@ async def brah2(client, message):
         if 1 <= ma[0] < 2:
             await message.reply(f" <b>تم انهاء مكالمة الفيديو مدتها دقيقه</b>")
         elif 2 <= ma[0] < 3:
-            await message.reply(f" <b>تم انهاء مكالمة الفيديو مدتها دقيقتين<b> ")
+            await message.reply(f" <b>تم انهاء مكالمة الفيديو مدتها دقيقتين</b> ")
         elif 3 <= ma[0] < 11:
-            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها {ma[0]} دقايق<b> ")  
+            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها {ma[0]} دقايق</b> ")  
         else:
-            await message.reply(f"<b>تم إنهاء مكالمة الفيديو مدتها {ma[0]} دقيقه<b>")
+            await message.reply(f"<b>تم إنهاء مكالمة الفيديو مدتها {ma[0]} دقيقه</b>")
     elif 3600 < da < 86400:
         if 1 <= ho[0] < 2:
-            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها ساعه<b> ")
+            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها ساعه</b> ")
         elif 2 <= ho[0] < 3:
-            await message.reply(f"</b>تم انهاء مكالمة الفيديو مدتها ساعتين<b> ")
+            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها ساعتين</b> ")
         elif 3 <= ho[0] < 11:
-            await message.reply(f"</b>تم انهاء مكالمة الفيديو مدتها {ho[0]} ساعات<b> ")  
+            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها {ho[0]} ساعات</b> ")  
         else:
-            await message.reply(f"</b>تم إنهاء مكالمة الفيديو مدتها {ho[0]} ساعة<b> ")
+            await message.reply(f"<b>تم إنهاء مكالمة الفيديو مدتها {ho[0]} ساعة</b> ")
     else:
         if 1 <= day[0] < 2:
             await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها يوم</b> ")
         elif 2 <= day[0] < 3:
-            await message.reply(f" </b>تم انهاء مكالمة الفيديو مدتها يومين<b> ")
+            await message.reply(f" <b>تم انهاء مكالمة الفيديو مدتها يومين</b> ")
         elif 3 <= day[0] < 11:
-            await message.reply(f" </b>تم انهاء مكالمة الفيديو مدتها {day[0]} ايام<b> ")  
+            await message.reply(f" </b>تم انهاء مكالمة الفيديو مدتها {day[0]} ايام</b> ")  
         else:
-            await message.reply(f" </b>تم إنهاء مكالمة الفيديو مدتها {day[0]} يوم<b>")
+            await message.reply(f" </b>تم إنهاء مكالمة الفيديو مدتها {day[0]} يوم</b>")
 @app.on_message(filters.video_chat_members_invited)
 async def fuckoff(client, message):
            text = f"• قــــام ← {message.from_user.mention}"
