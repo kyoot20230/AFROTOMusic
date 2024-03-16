@@ -79,7 +79,7 @@ async def brah2(client, message):
             await message.reply(f"</b>تم إنهاء مكالمة الفيديو مدتها {ho[0]} ساعة<b> ")
     else:
         if 1 <= day[0] < 2:
-            await message.reply(f"</b>تم انهاء مكالمة الفيديو مدتها يوم<b> ")
+            await message.reply(f"<b>تم انهاء مكالمة الفيديو مدتها يوم</b> ")
         elif 2 <= day[0] < 3:
             await message.reply(f" </b>تم انهاء مكالمة الفيديو مدتها يومين<b> ")
         elif 3 <= day[0] < 11:
