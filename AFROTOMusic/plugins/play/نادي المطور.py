@@ -40,6 +40,6 @@ async def call_dev(client: Client, message: Message):
     # إنشاء زر "اونلاين"
     online_button = InlineKeyboardButton("<🤍>", url=f"https://t.me/{SUPPORT_CHANNEL}")
     
-    await message.reply_text(f"~ **تم إرسال النداء إلى مطور البوت\n\n-› Master -› @ .",
+    await message.reply_text(f"~ **تم إرسال النداء إلى مطور البوت\n\n-› Master -› @EE77n ",
                              disable_web_page_preview=True,
                              reply_markup=InlineKeyboardMarkup([[online_button]]))
