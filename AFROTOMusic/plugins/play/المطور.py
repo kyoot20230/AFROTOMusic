@@ -10,12 +10,12 @@ import config
 async def maker(client: Client, message: Message):
     await message.reply_photo(
         photo="https://te.legra.ph/file/4159620b551a2bb676482.jpg",
-        caption="• Dev Bot ↦ جاك \n ━━━━━━━━━━━━ \n • Dev ↦  @T_5_G . ",
+        caption="• Dev Bot ↦ ميوزك \n ━━━━━━━━━━━━ \n • Dev ↦  @PI_Pll . ",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ᯓ𓆩𖡡𓏺.𝑨𝑳𝒁𝑨𝑰𝑴.𓏺𖡡𓆪", url=f"tg://openmessage?user_id={config.OWNER_ID}"
+                        "ᯓ𓆩𖡡𓏺.ادمـ𝝞ـــ ـ𖤓๋ࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣩࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧࣧ͜͡ـِْ๋͜ان.𓏺𖡡𓆪", url=f"tg://openmessage?user_id={config.OWNER_ID}"
                     ),
                 ],
                 [
