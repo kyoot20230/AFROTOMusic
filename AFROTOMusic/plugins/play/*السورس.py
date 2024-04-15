@@ -25,7 +25,7 @@ async def huhh(client: Client, message: Message):
         [
             [
                     InlineKeyboardButton(
-                        " قناة السورس  ", url=f"https://t.me/VVV5P"),
+                        " قناة السورس  ", url=f"https://t.me/EEEW2"),
                    InlineKeyboardButton(
                     
                     " جروب السورس ", url=f"https://t.me/EEEW2"), 
